@@ -1,0 +1,21 @@
+language: node_js
+node_js:
+- stable
+sudo: false
+cache:
+  directories:
+  - node_modules
+  - jspm_packages
+branches:
+  only:
+  - master
+before_install:
+- npm install -g jspm
+- jspm config registries.github.auth "$JSPM_GITHUB_AUTH_TOKEN"
+install:
+- npm i
+- typings i
+- jspm i
+script:
+- gulp build
+- gulp test
