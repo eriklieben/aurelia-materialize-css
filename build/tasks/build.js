@@ -58,7 +58,7 @@ gulp.task('build-html-system', function () {
 gulp.task('build', function(callback) {
   return runSequence(
     'clean',
-    ['build-html', 'build-amd'],
+    ['lint', 'build-html', 'build-amd'],
     callback
   );
 });
