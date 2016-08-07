@@ -12,7 +12,7 @@ module.exports = function(config) {
           'es6-module-loader': 'node_modules/es6-module-loader/dist/es6-module-loader.js'
         },
         packages: {
-          'test': {
+          'test/unit': {
             defaultExtension: 'ts'
           },
           'src': {
@@ -23,12 +23,13 @@ module.exports = function(config) {
       },
       serveFiles: [
         'src/**/*.ts',
+        'dist/**/*.js',
         'jspm_packages/**/*.js',
         'jspm_packages/**/*.css'
       ]
     },
     files: [
-      'test/setup.ts',
+      'test/unit/setup.ts',
       'test/unit/*.ts',
       'test/unit/**/*.ts'
     ],
