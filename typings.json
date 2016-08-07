@@ -1,7 +1,8 @@
 {
   "globalDependencies": {
     "jasmine": "registry:dt/jasmine#2.2.0+20160621224255",
-    "jquery": "registry:dt/jquery#1.10.0+20160704162008"
+    "jquery": "registry:dt/jquery#1.10.0+20160704162008",
+    "materialize-css": "registry:dt/materialize-css#0.97.5+20160628040906"
   },
   "dependencies": {
     "aurelia-binding": "github:aurelia/binding",
