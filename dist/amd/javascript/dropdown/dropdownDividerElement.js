@@ -9,18 +9,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 define(["require", "exports", "aurelia-framework", "./../../config"], function (require, exports, aurelia_framework_1, config_1) {
     "use strict";
-    var CollapsibleItemElement = (function () {
-        function CollapsibleItemElement() {
+    var DropdownDividerElement = (function () {
+        function DropdownDividerElement() {
         }
-        CollapsibleItemElement = __decorate([
-            aurelia_framework_1.customElement(config_1.config.collapsibleItem),
+        DropdownDividerElement = __decorate([
+            aurelia_framework_1.customElement(config_1.config.dropdownDivider),
             aurelia_framework_1.containerless,
-            aurelia_framework_1.inlineView("<template><li><slot></slot></li></template>"), 
+            aurelia_framework_1.inlineView("<template><li class='divider'></li></template>"), 
             __metadata('design:paramtypes', [])
-        ], CollapsibleItemElement);
-        return CollapsibleItemElement;
+        ], DropdownDividerElement);
+        return DropdownDividerElement;
     }());
-    exports.CollapsibleItemElement = CollapsibleItemElement;
+    exports.DropdownDividerElement = DropdownDividerElement;
 });
 
-//# sourceMappingURL=collapsibleItemElement.js.map
+//# sourceMappingURL=dropdownDividerElement.js.map

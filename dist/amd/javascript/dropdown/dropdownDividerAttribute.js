@@ -9,24 +9,24 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 define(["require", "exports", "aurelia-framework", "aurelia-dependency-injection", "./../../config"], function (require, exports, aurelia_framework_1, aurelia_dependency_injection_1, config_1) {
     "use strict";
-    var CollapsibleBodyAttribute = (function () {
-        function CollapsibleBodyAttribute(element) {
+    var DropdownDividerAttribute = (function () {
+        function DropdownDividerAttribute(element) {
             this.element = element;
         }
-        CollapsibleBodyAttribute.prototype.attached = function () {
-            this.element.classList.add("collapsible-body");
+        DropdownDividerAttribute.prototype.attached = function () {
+            this.element.classList.add("divider");
         };
-        CollapsibleBodyAttribute.prototype.detached = function () {
-            this.element.classList.remove("collapsible-body");
+        DropdownDividerAttribute.prototype.detached = function () {
+            this.element.classList.remove("divider");
         };
-        CollapsibleBodyAttribute = __decorate([
-            aurelia_framework_1.customAttribute(config_1.config.collapsibleBody),
+        DropdownDividerAttribute = __decorate([
+            aurelia_framework_1.customAttribute(config_1.config.dropdownDivider),
             aurelia_dependency_injection_1.inject(Element), 
             __metadata('design:paramtypes', [Element])
-        ], CollapsibleBodyAttribute);
-        return CollapsibleBodyAttribute;
+        ], DropdownDividerAttribute);
+        return DropdownDividerAttribute;
     }());
-    exports.CollapsibleBodyAttribute = CollapsibleBodyAttribute;
+    exports.DropdownDividerAttribute = DropdownDividerAttribute;
 });
 
-//# sourceMappingURL=collapsibleBodyAttribute.js.map
+//# sourceMappingURL=dropdownDividerAttribute.js.map

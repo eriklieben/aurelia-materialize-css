@@ -25,7 +25,8 @@ module.exports = function(config) {
         'src/**/*.ts',
         'dist/**/*.js',
         'jspm_packages/**/*.js',
-        'jspm_packages/**/*.css'
+        'jspm_packages/**/*.css',
+        'jspm_packages/**/*.ttf',
       ]
     },
     files: [

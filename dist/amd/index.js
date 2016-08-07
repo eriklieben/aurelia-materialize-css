@@ -18,12 +18,17 @@ define(["require", "exports", "./config", "@eriklieben/materialize-css"], functi
             "./javascript/collapsible/collapsibleAttribute",
             "./javascript/collapsible/collapsibleBodyAttribute",
             "./javascript/collapsible/collapsibleHeaderAttribute",
+            "./javascript/dropdown/dropdownAttribute",
+            "./javascript/dropdown/dropdownDividerAttribute",
         ];
         var elements = [
             "./javascript/collapsible/collapsibleElement",
             "./javascript/collapsible/collapsibleBodyElement",
             "./javascript/collapsible/collapsibleHeaderElement",
             "./javascript/collapsible/collapsibleItemElement",
+            "./javascript/dropdown/dropdownElement",
+            "./javascript/dropdown/dropdownDividerElement",
+            "./javascript/dropdown/dropdownItemElement",
         ];
         if (options.attributeFilter) {
             attributes = attributes.filter(options.attributeFilter);

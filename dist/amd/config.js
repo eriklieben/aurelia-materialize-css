@@ -7,6 +7,9 @@ define(["require", "exports"], function (require, exports) {
             this.collapsibleBody = (this.prefix + "collapsible-body").trim();
             this.collapsibleHeader = (this.prefix + "collapsible-header").trim();
             this.collapsibleItem = (this.prefix + "collapsible-item").trim();
+            this.dropdown = (this.prefix + "dropdown").trim();
+            this.dropdownDivider = (this.prefix + "dropdown-divider").trim();
+            this.dropdownItem = (this.prefix + "dropdown-item").trim();
         }
         return Configuration;
     }());

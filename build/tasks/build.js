@@ -9,10 +9,10 @@ var changed = require('gulp-changed');
 
 gulp.task('build-html', function () {
   return gulp.src(paths.html)
-    .pipe(gulp.dest(paths.output + 'es6'))
-    .pipe(gulp.dest(paths.output + 'commonjs'))
+    //.pipe(gulp.dest(paths.output + 'es6'))
+    //.pipe(gulp.dest(paths.output + 'commonjs'))
     .pipe(gulp.dest(paths.output + 'amd'))
-    .pipe(gulp.dest(paths.output + 'system'));
+    //.pipe(gulp.dest(paths.output + 'system'));
 });
 
 var tsProjectES6 = typescript.createProject('./tsconfig.json', { typescript: require('typescript') });
@@ -58,7 +58,7 @@ gulp.task('build-html-system', function () {
 gulp.task('build', function(callback) {
   return runSequence(
     'clean',
-    ['build-html', 'build-es6', 'build-commonjs', 'build-amd', 'build-system'],
+    ['build-html', 'build-amd'],
     callback
   );
 });

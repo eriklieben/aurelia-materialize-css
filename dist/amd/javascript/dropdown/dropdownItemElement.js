@@ -9,22 +9,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 define(["require", "exports", "aurelia-framework", "./../../config"], function (require, exports, aurelia_framework_1, config_1) {
     "use strict";
-    var CollapsibleBodyElement = (function () {
-        function CollapsibleBodyElement() {
+    var DropdownItemElement = (function () {
+        function DropdownItemElement() {
         }
-        __decorate([
-            aurelia_framework_1.bindable, 
-            __metadata('design:type', String)
-        ], CollapsibleBodyElement.prototype, "class", void 0);
-        CollapsibleBodyElement = __decorate([
-            aurelia_framework_1.customElement(config_1.config.collapsibleBody),
+        DropdownItemElement = __decorate([
+            aurelia_framework_1.customElement(config_1.config.dropdownItem),
             aurelia_framework_1.containerless,
-            aurelia_framework_1.inlineView("<template><div class='collapsible-body ${class}'><slot></slot></div></template>"), 
+            aurelia_framework_1.inlineView("<template><li><slot></slot></li></template>"), 
             __metadata('design:paramtypes', [])
-        ], CollapsibleBodyElement);
-        return CollapsibleBodyElement;
+        ], DropdownItemElement);
+        return DropdownItemElement;
     }());
-    exports.CollapsibleBodyElement = CollapsibleBodyElement;
+    exports.DropdownItemElement = DropdownItemElement;
 });
 
-//# sourceMappingURL=collapsibleBodyElement.js.map
+//# sourceMappingURL=dropdownItemElement.js.map
