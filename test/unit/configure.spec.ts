@@ -35,6 +35,16 @@ describe("the Aurelia Materialize CSS configuration with the option enableAttrib
         expect(sut.resources)
             .toContain("./javascript/collapsible/collapsibleHeaderAttribute");
     });
+
+    it("must register the dropdown attribute", () => {
+        expect(sut.resources)
+            .toContain("./javascript/dropdown/dropdownAttribute");
+    });
+
+    it("must register the dropdown divider attribute", () => {
+        expect(sut.resources)
+            .toContain("./javascript/dropdown/dropdownDividerAttribute");
+    });    
 });
 
 describe("the Aurelia Materialize CSS configuration with the option enableAttributes false", () => {
@@ -61,6 +71,16 @@ describe("the Aurelia Materialize CSS configuration with the option enableAttrib
         expect(sut.resources)
             .not.toContain("./javascript/collapsible/collapsibleHeaderAttribute");
     });
+
+    it("must register the dropdown attribute", () => {
+        expect(sut.resources)
+            .not.toContain("./javascript/dropdown/dropdownAttribute");
+    });
+
+    it("must register the dropdown divider attribute", () => {
+        expect(sut.resources)
+            .not.toContain("./javascript/dropdown/dropdownDividerAttribute");
+    });    
 });
 
 describe("the Aurelia Materialize CSS configuration with the option enableElements true", () => {
@@ -92,6 +112,21 @@ describe("the Aurelia Materialize CSS configuration with the option enableElemen
         expect(sut.resources)
             .toContain("./javascript/collapsible/collapsibleItemElement");
     });
+
+    it("must register the dropdown element", () => {
+        expect(sut.resources)
+            .toContain("./javascript/dropdown/dropdownElement");
+    });
+
+    it("must register the dropdown divider element", () => {
+        expect(sut.resources)
+            .toContain("./javascript/dropdown/dropdownDividerElement");
+    });
+
+    it("must register the dropdown item element", () => {
+        expect(sut.resources)
+            .toContain("./javascript/dropdown/dropdownItemElement");
+    });    
 });
 
 describe("the Aurelia Materialize CSS configuration with the option enableElements false", () => {
@@ -122,5 +157,20 @@ describe("the Aurelia Materialize CSS configuration with the option enableElemen
     it("must not register the collapsible item element", () => {
         expect(sut.resources)
             .not.toContain("./javascript/collapsible/collapsibleItemElement");
+    });
+
+    it("must register the dropdown element", () => {
+        expect(sut.resources)
+            .not.toContain("./javascript/dropdown/dropdownElement");
+    });
+
+    it("must register the dropdown divider element", () => {
+        expect(sut.resources)
+            .not.toContain("./javascript/dropdown/dropdownDividerElement");
+    });
+
+    it("must register the dropdown item element", () => {
+        expect(sut.resources)
+            .not.toContain("./javascript/dropdown/dropdownItemElement");
     });
 });

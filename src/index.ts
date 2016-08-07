@@ -31,6 +31,9 @@ export function configure(config: FrameworkConfiguration, options?: IMaterialize
         "./javascript/collapsible/collapsibleAttribute",
         "./javascript/collapsible/collapsibleBodyAttribute",
         "./javascript/collapsible/collapsibleHeaderAttribute",
+
+        "./javascript/dropdown/dropdownAttribute",
+        "./javascript/dropdown/dropdownDividerAttribute",
     ];
 
     let elements = [
@@ -38,6 +41,10 @@ export function configure(config: FrameworkConfiguration, options?: IMaterialize
         "./javascript/collapsible/collapsibleBodyElement",
         "./javascript/collapsible/collapsibleHeaderElement",
         "./javascript/collapsible/collapsibleItemElement",
+
+        "./javascript/dropdown/dropdownElement",
+        "./javascript/dropdown/dropdownDividerElement",
+        "./javascript/dropdown/dropdownItemElement",
     ];
 
     // Filter out attributes and elements
