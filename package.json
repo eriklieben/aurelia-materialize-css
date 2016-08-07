@@ -18,9 +18,8 @@
     "type": "git",
     "url": "https://github.com/eriklieben/aurelia-materialize-css"
   },
-  "scripts" :
-    {  
-     "test" : "gulp test"
+  "scripts": {
+    "test": "gulp test"
   },
   "devDependencies": {
     "aurelia-tools": "^0.2.4",
@@ -63,10 +62,11 @@
       "dist": "dist/amd"
     },
     "dependencies": {
+      "@eriklieben/materialize-css": "^0.97.7",
       "aurelia-bootstrapper": "^1.0.0",
       "aurelia-pal-browser": "^1.0.0",
       "aurelia-testing": "^1.0.0-beta.2.0.0",
-      "jquery": "2.2.3"
+      "jquery": "2.2.4"
     },
     "devDependencies": {
       "aurelia-polyfills": "^1.0.0"

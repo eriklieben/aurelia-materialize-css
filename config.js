@@ -12,10 +12,10 @@ System.config({
     "aurelia-pal-browser": "npm:aurelia-pal-browser@1.0.0",
     "aurelia-polyfills": "npm:aurelia-polyfills@1.0.0",
     "aurelia-testing": "npm:aurelia-testing@1.0.0-beta.2.0.0",
-    "jquery": "npm:jquery@2.2.3",
+    "jquery": "npm:jquery@2.2.4",
     "npm:@eriklieben/materialize-css@0.97.7": {
       "css": "github:systemjs/plugin-css@0.1.26",
-      "jquery": "npm:jquery@2.2.3"
+      "jquery": "npm:jquery@2.2.4"
     },
     "npm:aurelia-binding@1.0.1": {
       "aurelia-logging": "npm:aurelia-logging@1.0.0",
