@@ -10,7 +10,8 @@ branches:
   only:
   - master
 before_install:
-- npm install -g jspm
+- npm i -g jspm
+- npm i -g typings
 - jspm config registries.github.auth "$JSPM_GITHUB_AUTH_TOKEN"
 install:
 - npm i
