@@ -1,58 +1,96 @@
-# aurelia-skeleton-plugin
+# aurelia-materialize-css plugin
 
-[![ZenHub](https://raw.githubusercontent.com/ZenHubIO/support/master/zenhub-badge.png)](https://zenhub.io)
-[![Join the chat at https://gitter.im/aurelia/discuss](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/aurelia/discuss?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Join the chat at https://gitter.im/eriklieben/aurelia-materialize-css](https://badges.gitter.im/eriklieben/aurelia-materialize-css.svg)](https://gitter.im/eriklieben/aurelia-materialize-css?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) [![Build Status](https://travis-ci.org/eriklieben/aurelia-materialize-css.svg?branch=master)](https://travis-ci.org/eriklieben/aurelia-materialize-css)
+[![GitHub version](https://img.shields.io/github/release/eriklieben/aurelia-materialize-css.svg)](https://img.shields.io/github/release/eriklieben/aurelia-materialize-css.svg)
+[![npm version](https://img.shields.io/npm/v/aurelia-materialize-css.svg)](https://img.shields.io/npm/v/aurelia-materialize-css.svg)
 
-This skeleton is part of the [Aurelia](http://www.aurelia.io/) platform. It sets up a standard aurelia plugin using gulp to build your ES6 code with the Babel compiler. Karma/Jasmine testing is also configured.
+Custom elements and attributes to use MaterializeCSS with Aurelia.
 
-> To keep up to date on [Aurelia](http://www.aurelia.io/), please visit and subscribe to [the official blog](http://blog.durandal.io/) and [our email list](http://durandal.us10.list-manage1.com/subscribe?u=dae7661a3872ee02b519f6f29&id=3de6801ccc). We also invite you to [follow us on twitter](https://twitter.com/aureliaeffect). If you have questions, please [join our community on Gitter](https://gitter.im/aurelia/discuss). If you would like to have deeper insight into our development process, please install the [ZenHub](https://zenhub.io) Chrome or Firefox Extension and visit any of our repository's boards. You can get an overview of all Aurelia work by visiting [the framework board](https://github.com/aurelia/framework#boards).
+#Demo site
+Examples and how to use can be found at the [demo site](http://aurelia-materialize-css.azurewebsites.net/)
 
-## Building The Code
+#Dependencies
+- [Materialize-CSS](https://github.com/Dogfalo/materialize)
+- [JQuery](https://github.com/components/jquery)
+- [SystemJS plugin-css](https://github.com/systemjs/plugin-css/)
 
-To build the code, follow these steps.
+#Installation
+```
+jspm i aurelia-materialize-css
+```
+main.ts (typescript)
+```typescript
+export function configure(aurelia: Aurelia) {
+  aurelia.use
+    .standardConfiguration()
+    .developmentLogging()
+    .plugin("aurelia-materialize-css");
 
-1. Ensure that [NodeJS](http://nodejs.org/) is installed. This provides the platform on which the build tooling runs.
-2. From the project folder, execute the following command:
+  aurelia.start().then(() => aurelia.setRoot());
+}
+```
+main.js (javascript)
+```javascript
+export function configure(aurelia) {
+  aurelia.use
+    .standardConfiguration()
+    .developmentLogging()
+    .plugin("aurelia-materialize-css");
 
-  ```shell
-  npm install
-  ```
-3. Ensure that [Gulp](http://gulpjs.com/) is installed. If you need to install it, use the following command:
+  aurelia.start().then(() => aurelia.setRoot());
+}
+```
 
-  ```shell
-  npm install -g gulp
-  ```
-4. To build the code, you can now run:
+#Configuration
+Allows you to supply ```MaterializeCssOptions``` options.
 
-  ```shell
-  gulp build
-  ```
-5. You will find the compiled code in the `dist` folder, available in three module formats: AMD, CommonJS and ES6.
+``` 
+.plugin("aurelia-materialize-css", new MaterializeCssOptions());
+```
 
-6. See `gulpfile.js` for other tasks related to generating the docs and linting.
+##MaterializeCssOption properties:
 
-## Running The Tests
+| Property         | Type             | Default   | Description                                                       |
+| ---------------- |:---------------- | --------- | ----------------------------------------------------------------- | 
+| enableAttributes | boolean          | true      | enable or disable all the attributes                              |
+| enableElements   | boolean          | true      | enable or disable all the elements                                |
+| attributeFilter  | (val) => boolean | undefined | func, allows custom logic to enable or disable attributes         | 
+| elementFilter    | (val) => boolean | undefined | func, allows custom logic to enable or disable elements           |
+| configuration    | Configuration    | see below | configuration object allows custom naming of elements/ attributes |
 
-To run the unit tests, first ensure that you have followed the steps above in order to install all dependencies and successfully build the library. Once you have done that, proceed with these additional steps:
+##Configuration properties:
 
-1. Ensure that the [Karma](http://karma-runner.github.io/) CLI is installed. If you need to install it, use the following command:
+| Property          | Default                                         | Description                                         |
+| ----------------- | ----------------------------------------------- | --------------------------------------------------- |
+| prefix            | m:                                              | The prefix before each element or attribute         |
+| collapsible       | m:collapsible                                   | Name of the collapsible element or attribute        |
+| collapsibleBody   | m:collapsible-body                              | Name of the collapsible body element or attribute   |
+| collapsibleHeader | m:collapsible-header                            | Name of the collapsible header element or attribute |
+| collapsibleItem   | m:collapsible-item                              | Name of the collapsible item element or attribute   |
+| dropdown          | m:dropdown                                      | Name of the dropdown element or attribute           |
+| dropdownDivider   | m:dropdown-divider                              | Name of the dropdown divider element or attribute   |
+| dropdownItem      | m:dropdown-item                                 | Name of the dropdown item element or attribute      |
+| boxed             | m:boxed                                         | Name of the boxed element or attribute              |
+| slide             | m:slide                                         | Name of the slide element or attribute              |
+| slider            | m:slider                                        | Name of the slider element or attribute             |
+| modal             | m:modal                                         | Name of the modal element or attribute              |
+| modalTrigger      | m:modal-trigger                                 | Name of the modal trigger element or attribute      |
+| modalContent      | m:modal-content                                 | Name of the modal content element or attribute      |
+| modalFooter       | m:modal-footer                                  | Name of the modal footer element or attribute       |
+| pushpin           | m:pushpin                                       | Name of the pushpin element or attribute            |
+| scrollSpy         | m:scrollspy                                     | Name of the scroll spy element or attribute         |
+| badge             | m:badge                                         | Name of the badge element or attribute              |
+| icon              | m:icon                                          | Name of the icon element or attribute               |
+| button            | m:button                                        | Name of the button element or attribute             |
+| breadcrumb        | m:breadcrumb                                    | Name of the breadcrumb element or attribute         |
+| breadcrumbs       | m:breadcrumbs                                   | Name of the breadcrumbs element or attribute        |
+| materialSelect    | m:select                                        | Name of the material select element or attribute    |
+| pickadate         | m:pickadate                                     | Name of the pick a date element or attribute        |
+| card              | m:card                                          | Name of the card element or attribute               |
+| cardTitle         | m:card-title                                    | Name of the card title element or attribute         |
+| cardAction        | m:card-action                                   | Name of the card action element or attribute        |
+| cardImage         | m:card-image                                    | Name of the card image element or attribute         |
+| cardReveal        | m:card-reveal                                   | Name of the card reveal element or attribute        |
+| cardPanel         | m:card-panel                                    | Name of the card panel element or attribute         |
+| allowedWaves      | light, red, yellow, orange, purple, green, teal | List of allowed waves classes                       |
 
-  ```shell
-  npm install -g karma-cli
-  ```
-2. Ensure that [jspm](http://jspm.io/) is installed. If you need to install it, use the following commnand:
-
-  ```shell
-  npm install -g jspm
-  ```
-3. Install the client-side dependencies with jspm:
-
-  ```shell
-  jspm install
-  ```
-
-4. You can now run the tests with this command:
-
-  ```shell
-  karma start
-  ```
