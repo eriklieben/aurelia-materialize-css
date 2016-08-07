@@ -1,6 +1,6 @@
 {
   "name": "aurelia-materialize-css",
-  "version": "0.0.14",
+  "version": "0.1.00",
   "description": "Aurelia plugin containing MaterializeCSS components.",
   "keywords": [
     "aurelia",
