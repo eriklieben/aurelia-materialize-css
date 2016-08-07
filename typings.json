@@ -1,5 +1,19 @@
 {
   "globalDependencies": {
-    "jasmine": "registry:dt/jasmine#2.2.0+20160621224255"
+    "jasmine": "registry:dt/jasmine#2.2.0+20160621224255",
+    "jquery": "registry:dt/jquery#1.10.0+20160704162008",
+    "materialize-css": "registry:dt/materialize-css#0.97.5+20160628040906"
+  },
+  "dependencies": {
+    "aurelia-binding": "github:aurelia/binding",
+    "aurelia-dependency-injection": "github:aurelia/dependency-injection",
+    "aurelia-framework": "github:aurelia/framework",
+    "aurelia-loader": "github:aurelia/loader",
+    "aurelia-logging": "github:aurelia/logging",
+    "aurelia-metadata": "github:aurelia/metadata",
+    "aurelia-pal": "github:aurelia/pal",
+    "aurelia-path": "github:aurelia/path",
+    "aurelia-task-queue": "github:aurelia/task-queue",
+    "aurelia-templating": "github:aurelia/templating"
   }
 }

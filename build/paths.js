@@ -12,6 +12,6 @@ module.exports = {
   e2eSpecsDist: 'test/e2e/dist/',
     dtsSrc: [
     'typings/**/*.ts', 
-    './jspm_packages/**/*.d.ts'
+    'es6-typings/**/*.ts'
   ],
 };
