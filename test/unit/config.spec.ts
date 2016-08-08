@@ -33,4 +33,16 @@ describe("the Aurelia Materialize CSS config", () => {
     it("must have a property dropdownItem with the default value 'm:dropdown-item'", () => {
         expect(config.dropdownItem).toBe("m:dropdown-item");
     });
+    
+    it("must have a property boxed with the default value 'm:boxed'", () => {
+        expect(config.boxed).toBe("m:boxed");
+    });
+
+    it("must have a property slide with the default value 'm:slide'", () => {
+        expect(config.slide).toBe("m:slide");
+    });
+
+    it("must have a property slider with the default value 'm:slider'", () => {
+        expect(config.slider).toBe("m:slider");
+    });
 });

@@ -54,7 +54,6 @@ describe("the Aurelia Materialize CSS DropdownElement", () => {
         // assert            
         .then(() => expect($.fn.dropdown).toHaveBeenCalledWith(defaultOptions))
         .then(done);
-
     });
 
      it("must call the dropdown method with a custom out-duration set", done => {

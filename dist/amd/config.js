@@ -10,6 +10,9 @@ define(["require", "exports"], function (require, exports) {
             this.dropdown = (this.prefix + "dropdown").trim();
             this.dropdownDivider = (this.prefix + "dropdown-divider").trim();
             this.dropdownItem = (this.prefix + "dropdown-item").trim();
+            this.boxed = (this.prefix + "boxed").trim();
+            this.slide = (this.prefix + "slide").trim();
+            this.slider = (this.prefix + "slider").trim();
         }
         return Configuration;
     }());

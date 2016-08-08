@@ -20,6 +20,7 @@ define(["require", "exports", "./config", "@eriklieben/materialize-css"], functi
             "./javascript/collapsible/collapsibleHeaderAttribute",
             "./javascript/dropdown/dropdownAttribute",
             "./javascript/dropdown/dropdownDividerAttribute",
+            "./javascript/media/boxedAttribute",
         ];
         var elements = [
             "./javascript/collapsible/collapsibleElement",
@@ -29,6 +30,8 @@ define(["require", "exports", "./config", "@eriklieben/materialize-css"], functi
             "./javascript/dropdown/dropdownElement",
             "./javascript/dropdown/dropdownDividerElement",
             "./javascript/dropdown/dropdownItemElement",
+            "./javascript/media/slideElement",
+            "./javascript/media/sliderElement",
         ];
         if (options.attributeFilter) {
             attributes = attributes.filter(options.attributeFilter);
