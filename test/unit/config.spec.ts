@@ -45,4 +45,21 @@ describe("the Aurelia Materialize CSS config", () => {
     it("must have a property slider with the default value 'm:slider'", () => {
         expect(config.slider).toBe("m:slider");
     });
+
+    it("must have a property modal with the default value 'm:modal'", () => {
+        expect(config.modal).toBe("m:modal");
+    });
+
+    it("must have a property modalTrigger with the default value 'm:modal-trigger'", () => {
+        expect(config.modalTrigger).toBe("m:modal-trigger");
+    });
+
+    it("must have a property modalContent with the default value 'm:modal-content'", () => {
+        expect(config.modalContent).toBe("m:modal-content");
+    });
+
+    it("must have a property modalFooter with the default value 'm:modal-footer'", () => {
+        expect(config.modalFooter).toBe("m:modal-footer");
+    });
+    
 });

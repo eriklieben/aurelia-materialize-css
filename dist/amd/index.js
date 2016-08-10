@@ -21,6 +21,7 @@ define(["require", "exports", "./config", "@eriklieben/materialize-css"], functi
             "./javascript/dropdown/dropdownAttribute",
             "./javascript/dropdown/dropdownDividerAttribute",
             "./javascript/media/boxedAttribute",
+            "./javascript/modals/modalTriggerAttribute",
         ];
         var elements = [
             "./javascript/collapsible/collapsibleElement",
@@ -32,6 +33,9 @@ define(["require", "exports", "./config", "@eriklieben/materialize-css"], functi
             "./javascript/dropdown/dropdownItemElement",
             "./javascript/media/slideElement",
             "./javascript/media/sliderElement",
+            "./javascript/modals/modalContentElement",
+            "./javascript/modals/modalElement",
+            "./javascript/modals/modalFooterElement",
         ];
         if (options.attributeFilter) {
             attributes = attributes.filter(options.attributeFilter);

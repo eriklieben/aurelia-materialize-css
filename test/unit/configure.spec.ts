@@ -50,6 +50,11 @@ describe("the Aurelia Materialize CSS configuration with the option enableAttrib
         expect(sut.resources)
             .toContain("./javascript/media/boxedAttribute");
     }); 
+
+    it("must register the modals modal-trigger attribute", () => {
+        expect(sut.resources)
+            .toContain("./javascript/modals/modalTriggerAttribute");
+    });
 });
 
 describe("the Aurelia Materialize CSS configuration with the option enableAttributes false", () => {
@@ -90,6 +95,11 @@ describe("the Aurelia Materialize CSS configuration with the option enableAttrib
     it("must not register the media boxed attribute", () => {
         expect(sut.resources)
             .not.toContain("./javascript/media/boxedAttribute");
+    });
+
+    it("must not register the modals modal-trigger attribute", () => {
+        expect(sut.resources)
+            .not.toContain("./javascript/modals/modalTriggerAttribute");
     });
 });
 
@@ -146,6 +156,21 @@ describe("the Aurelia Materialize CSS configuration with the option enableElemen
     it("must register the media slider element", () => {
         expect(sut.resources)
             .toContain("./javascript/media/sliderElement");
+    });
+
+    it("must register the modals modal-content element", () => {
+        expect(sut.resources)
+            .toContain("./javascript/modals/modalContentElement");
+    });
+
+    it("must register the modals modal element", () => {
+        expect(sut.resources)
+            .toContain("./javascript/modals/modalElement");
+    });
+
+    it("must register the modals modal-footer element", () => {
+        expect(sut.resources)
+            .toContain("./javascript/modals/modalFooterElement");
     });        
 });
 
@@ -203,4 +228,19 @@ describe("the Aurelia Materialize CSS configuration with the option enableElemen
         expect(sut.resources)
             .not.toContain("./javascript/media/sliderElement");
     });
+
+   it("must not register the modals modal-content element", () => {
+        expect(sut.resources)
+            .not.toContain("./javascript/modals/modalContentElement");
+    });
+
+    it("must not register the modals modal element", () => {
+        expect(sut.resources)
+            .not.toContain("./javascript/modals/modalElement");
+    });
+
+    it("must not register the modals modal-footer element", () => {
+        expect(sut.resources)
+            .not.toContain("./javascript/modals/modalFooterElement");
+    });    
 });

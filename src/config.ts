@@ -14,6 +14,11 @@ export class Configuration implements IConfiguration {
     public boxed = `${this.prefix}boxed`.trim();
     public slide = `${this.prefix}slide`.trim();
     public slider = `${this.prefix}slider`.trim();
+
+    public modal = `${this.prefix}modal`.trim();
+    public modalTrigger = `${this.prefix}modal-trigger`.trim();
+    public modalContent = `${this.prefix}modal-content`.trim();
+    public modalFooter = `${this.prefix}modal-footer`.trim();
 }
 
 export interface IConfiguration {
@@ -31,6 +36,11 @@ export interface IConfiguration {
     boxed?: string;
     slide?: string;
     slider?: string;
+
+    modal?: string;
+    modalTrigger?: string;
+    modalContent?: string;
+    modalFooter?: string;
 }
 
 export var config: IConfiguration = new Configuration();

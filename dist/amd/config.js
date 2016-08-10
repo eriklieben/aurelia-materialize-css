@@ -13,6 +13,10 @@ define(["require", "exports"], function (require, exports) {
             this.boxed = (this.prefix + "boxed").trim();
             this.slide = (this.prefix + "slide").trim();
             this.slider = (this.prefix + "slider").trim();
+            this.modal = (this.prefix + "modal").trim();
+            this.modalTrigger = (this.prefix + "modal-trigger").trim();
+            this.modalContent = (this.prefix + "modal-content").trim();
+            this.modalFooter = (this.prefix + "modal-footer").trim();
         }
         return Configuration;
     }());
