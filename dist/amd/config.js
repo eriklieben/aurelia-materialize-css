@@ -17,6 +17,7 @@ define(["require", "exports"], function (require, exports) {
             this.modalTrigger = (this.prefix + "modal-trigger").trim();
             this.modalContent = (this.prefix + "modal-content").trim();
             this.modalFooter = (this.prefix + "modal-footer").trim();
+            this.pushpin = (this.prefix + "pushpin").trim();
         }
         return Configuration;
     }());

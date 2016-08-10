@@ -61,5 +61,8 @@ describe("the Aurelia Materialize CSS config", () => {
     it("must have a property modalFooter with the default value 'm:modal-footer'", () => {
         expect(config.modalFooter).toBe("m:modal-footer");
     });
-    
+
+    it("must have a property pushpin with the default value 'm:pushpin'", () => {
+        expect(config.pushpin).toBe("m:pushpin");
+    });
 });

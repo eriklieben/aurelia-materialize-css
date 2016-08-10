@@ -19,6 +19,10 @@ export class Configuration implements IConfiguration {
     public modalTrigger = `${this.prefix}modal-trigger`.trim();
     public modalContent = `${this.prefix}modal-content`.trim();
     public modalFooter = `${this.prefix}modal-footer`.trim();
+
+    public pushpin = `${this.prefix}pushpin`.trim();
+
+
 }
 
 export interface IConfiguration {
@@ -41,6 +45,8 @@ export interface IConfiguration {
     modalTrigger?: string;
     modalContent?: string;
     modalFooter?: string;
+
+    pushpin?: string;
 }
 
 export var config: IConfiguration = new Configuration();

@@ -55,6 +55,11 @@ describe("the Aurelia Materialize CSS configuration with the option enableAttrib
         expect(sut.resources)
             .toContain("./javascript/modals/modalTriggerAttribute");
     });
+
+    it("must register the pushpin attribute", () => {
+        expect(sut.resources)
+            .toContain("./javascript/pushpin/pushpinAttribute");
+    });    
 });
 
 describe("the Aurelia Materialize CSS configuration with the option enableAttributes false", () => {
@@ -100,6 +105,11 @@ describe("the Aurelia Materialize CSS configuration with the option enableAttrib
     it("must not register the modals modal-trigger attribute", () => {
         expect(sut.resources)
             .not.toContain("./javascript/modals/modalTriggerAttribute");
+    });
+
+    it("must not register the pushpin attribute", () => {
+        expect(sut.resources)
+            .not.toContain("./javascript/pushpin/pushpinAttribute");
     });
 });
 
@@ -171,7 +181,12 @@ describe("the Aurelia Materialize CSS configuration with the option enableElemen
     it("must register the modals modal-footer element", () => {
         expect(sut.resources)
             .toContain("./javascript/modals/modalFooterElement");
-    });        
+    });
+
+    it("must register the pushin element", () => {
+        expect(sut.resources)
+            .toContain("./javascript/pushpin/pushpinElement");
+    });
 });
 
 describe("the Aurelia Materialize CSS configuration with the option enableElements false", () => {
@@ -242,5 +257,10 @@ describe("the Aurelia Materialize CSS configuration with the option enableElemen
     it("must not register the modals modal-footer element", () => {
         expect(sut.resources)
             .not.toContain("./javascript/modals/modalFooterElement");
+    });
+
+    it("must not register the pushin element", () => {
+        expect(sut.resources)
+            .not.toContain("./javascript/pushpin/pushpinElement");
     });    
 });

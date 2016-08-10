@@ -38,7 +38,9 @@ export function configure(config: FrameworkConfiguration, options?: IMaterialize
         "./javascript/media/boxedAttribute",
 
         "./javascript/modals/modalTriggerAttribute",
-        ];
+
+        "./javascript/pushpin/pushpinAttribute",
+    ];
 
     let elements = [
         "./javascript/collapsible/collapsibleElement",
@@ -56,7 +58,9 @@ export function configure(config: FrameworkConfiguration, options?: IMaterialize
         "./javascript/modals/modalContentElement",
         "./javascript/modals/modalElement",
         "./javascript/modals/modalFooterElement",
-        ];
+
+        "./javascript/pushpin/pushpinElement",
+    ];
 
     // Filter out attributes and elements
     if (options.attributeFilter) {
