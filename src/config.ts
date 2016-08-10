@@ -22,7 +22,7 @@ export class Configuration implements IConfiguration {
 
     public pushpin = `${this.prefix}pushpin`.trim();
 
-
+    public scrollSpy = `${this.prefix}scrollspy`.trim();
 }
 
 export interface IConfiguration {
@@ -47,6 +47,8 @@ export interface IConfiguration {
     modalFooter?: string;
 
     pushpin?: string;
+
+    scrollSpy?: string;
 }
 
 export var config: IConfiguration = new Configuration();

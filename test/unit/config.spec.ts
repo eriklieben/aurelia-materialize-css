@@ -65,4 +65,8 @@ describe("the Aurelia Materialize CSS config", () => {
     it("must have a property pushpin with the default value 'm:pushpin'", () => {
         expect(config.pushpin).toBe("m:pushpin");
     });
+
+    it("must have a property scrollSpy with the default value 'm:scrollspy'", () => {
+        expect(config.scrollSpy).toBe("m:scrollspy");
+    });
 });

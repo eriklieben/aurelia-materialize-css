@@ -18,6 +18,7 @@ define(["require", "exports"], function (require, exports) {
             this.modalContent = (this.prefix + "modal-content").trim();
             this.modalFooter = (this.prefix + "modal-footer").trim();
             this.pushpin = (this.prefix + "pushpin").trim();
+            this.scrollSpy = (this.prefix + "scrollspy").trim();
         }
         return Configuration;
     }());

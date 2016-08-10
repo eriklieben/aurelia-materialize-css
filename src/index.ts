@@ -40,6 +40,8 @@ export function configure(config: FrameworkConfiguration, options?: IMaterialize
         "./javascript/modals/modalTriggerAttribute",
 
         "./javascript/pushpin/pushpinAttribute",
+
+        "./javascript/scrollspy/scrollspyAttribute",
     ];
 
     let elements = [
@@ -60,6 +62,8 @@ export function configure(config: FrameworkConfiguration, options?: IMaterialize
         "./javascript/modals/modalFooterElement",
 
         "./javascript/pushpin/pushpinElement",
+
+        "./javascript/scrollspy/scrollspyElement",
     ];
 
     // Filter out attributes and elements
