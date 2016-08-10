@@ -18,7 +18,6 @@ describe("the Aurelia Materialize CSS ModalElement", () => {
         var sut = new ModalTrigger(null);
 
         // act
-        console.log(sut);
         sut.click();
 
         // assert
