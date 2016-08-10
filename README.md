@@ -1,6 +1,6 @@
 # aurelia-materialize-css plugin
 
-[![Join the chat at https://gitter.im/eriklieben/aurelia-materialize-css](https://badges.gitter.im/eriklieben/aurelia-materialize-css.svg)](https://gitter.im/eriklieben/aurelia-materialize-css?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) [![Build Status](https://travis-ci.org/eriklieben/aurelia-materialize-css.svg?branch=master)](https://travis-ci.org/eriklieben/aurelia-materialize-css)
+[![Gitter](https://badges.gitter.im/aurelia-materialize-css/Lobby.svg)](https://gitter.im/aurelia-materialize-css/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge) [![Build Status](https://travis-ci.org/eriklieben/aurelia-materialize-css.svg?branch=master)](https://travis-ci.org/eriklieben/aurelia-materialize-css)
 [![GitHub version](https://img.shields.io/github/release/eriklieben/aurelia-materialize-css.svg)](https://img.shields.io/github/release/eriklieben/aurelia-materialize-css.svg)
 [![npm version](https://img.shields.io/npm/v/aurelia-materialize-css.svg)](https://img.shields.io/npm/v/aurelia-materialize-css.svg)
 
