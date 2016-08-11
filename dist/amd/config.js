@@ -19,6 +19,7 @@ define(["require", "exports"], function (require, exports) {
             this.modalFooter = (this.prefix + "modal-footer").trim();
             this.pushpin = (this.prefix + "pushpin").trim();
             this.scrollSpy = (this.prefix + "scrollspy").trim();
+            this.badge = (this.prefix + "badge").trim();
         }
         return Configuration;
     }());

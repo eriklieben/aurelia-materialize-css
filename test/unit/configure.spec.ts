@@ -64,6 +64,11 @@ describe("the Aurelia Materialize CSS configuration with the option enableAttrib
     it("must register the scrollspy attribute", () => {
         expect(sut.resources)
             .toContain("./javascript/scrollspy/scrollspyAttribute");
+    });
+
+    it("must register the badge attribute", () => {
+        expect(sut.resources)
+            .toContain("./components/badge/badgeAttribute");
     });    
 });
 
@@ -120,7 +125,12 @@ describe("the Aurelia Materialize CSS configuration with the option enableAttrib
     it("must not register the scrollspy attribute", () => {
         expect(sut.resources)
             .not.toContain("./javascript/scrollspy/scrollspyAttribute");
-    });    
+    });
+
+    it("must not register the badge attribute", () => {
+        expect(sut.resources)
+            .not.toContain("./components/badge/badgeAttribute");
+    });
 });
 
 describe("the Aurelia Materialize CSS configuration with the option enableElements true", () => {
@@ -201,6 +211,11 @@ describe("the Aurelia Materialize CSS configuration with the option enableElemen
     it("must register the scrollspy element", () => {
         expect(sut.resources)
             .toContain("./javascript/scrollspy/scrollspyElement");
+    });
+
+    it("must register the badge element", () => {
+        expect(sut.resources)
+            .toContain("./components/badge/badgeElement");
     });    
 });
 
@@ -282,5 +297,10 @@ describe("the Aurelia Materialize CSS configuration with the option enableElemen
     it("must not register the scrollspy element", () => {
         expect(sut.resources)
             .not.toContain("./javascript/scrollspy/scrollspyElement");
+    });
+
+    it("must not register the badge element", () => {
+        expect(sut.resources)
+            .not.toContain("./components/badge/badgeElement");
     });
 });

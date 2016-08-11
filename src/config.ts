@@ -23,6 +23,8 @@ export class Configuration implements IConfiguration {
     public pushpin = `${this.prefix}pushpin`.trim();
 
     public scrollSpy = `${this.prefix}scrollspy`.trim();
+
+    public badge = `${this.prefix}badge`.trim();
 }
 
 export interface IConfiguration {
@@ -49,6 +51,8 @@ export interface IConfiguration {
     pushpin?: string;
 
     scrollSpy?: string;
+
+    badge?: string;
 }
 
 export var config: IConfiguration = new Configuration();

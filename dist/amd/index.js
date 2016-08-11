@@ -24,6 +24,7 @@ define(["require", "exports", "./config", "@eriklieben/materialize-css"], functi
             "./javascript/modals/modalTriggerAttribute",
             "./javascript/pushpin/pushpinAttribute",
             "./javascript/scrollspy/scrollspyAttribute",
+            "./components/badge/badgeAttribute",
         ];
         var elements = [
             "./javascript/collapsible/collapsibleElement",
@@ -40,6 +41,7 @@ define(["require", "exports", "./config", "@eriklieben/materialize-css"], functi
             "./javascript/modals/modalFooterElement",
             "./javascript/pushpin/pushpinElement",
             "./javascript/scrollspy/scrollspyElement",
+            "./components/badge/badgeElement",
         ];
         if (options.attributeFilter) {
             attributes = attributes.filter(options.attributeFilter);

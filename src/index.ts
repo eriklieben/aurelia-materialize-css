@@ -42,6 +42,8 @@ export function configure(config: FrameworkConfiguration, options?: IMaterialize
         "./javascript/pushpin/pushpinAttribute",
 
         "./javascript/scrollspy/scrollspyAttribute",
+
+        "./components/badge/badgeAttribute",
     ];
 
     let elements = [
@@ -64,6 +66,8 @@ export function configure(config: FrameworkConfiguration, options?: IMaterialize
         "./javascript/pushpin/pushpinElement",
 
         "./javascript/scrollspy/scrollspyElement",
+
+        "./components/badge/badgeElement",
     ];
 
     // Filter out attributes and elements
