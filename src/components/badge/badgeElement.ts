@@ -13,7 +13,7 @@ export class BadgeElement {
     public attached() {
         this.element.classList.add("badge");
 
-         if (this.new || this.element.attributes.getNamedItem("new") !== undefined) {
+         if (this.new || this.element.attributes.getNamedItem("new") !== null) {
              this.element.classList.add("new");
          }
     }
@@ -24,7 +24,9 @@ export class BadgeElement {
 
     public newChanged() {
        if (this.element) {
-            (this.new) ? this.element.classList.add("new") : this.element.classList.remove("new");
+            (!this.new && this.element.attributes.getNamedItem("new") === null) ? 
+                this.element.classList.remove("new") : 
+                this.element.classList.add("new");
        }
     }
 }
