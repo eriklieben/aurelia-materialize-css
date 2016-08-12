@@ -24,8 +24,8 @@ export class BadgeElement {
 
     public newChanged() {
        if (this.element) {
-            (!this.new && this.element.attributes.getNamedItem("new") === null) ? 
-                this.element.classList.remove("new") : 
+            (!this.new && this.element.attributes.getNamedItem("new") === null) ?
+                this.element.classList.remove("new") :
                 this.element.classList.add("new");
        }
     }
