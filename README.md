@@ -1,8 +1,7 @@
 # aurelia-materialize-css plugin
 
-[![Gitter](https://badges.gitter.im/aurelia-materialize-css/Lobby.svg)](https://gitter.im/aurelia-materialize-css/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge) [![Build Status](https://travis-ci.org/eriklieben/aurelia-materialize-css.svg?branch=master)](https://travis-ci.org/eriklieben/aurelia-materialize-css)
-[![GitHub version](https://img.shields.io/github/release/eriklieben/aurelia-materialize-css.svg)](https://img.shields.io/github/release/eriklieben/aurelia-materialize-css.svg)
-[![npm version](https://img.shields.io/npm/v/aurelia-materialize-css.svg)](https://img.shields.io/npm/v/aurelia-materialize-css.svg)
+[![Gitter](https://badges.gitter.im/aurelia-materialize-css/Lobby.svg)](https://gitter.im/aurelia-materialize-css/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge) [![Build Status](https://travis-ci.org/eriklieben/aurelia-materialize-css.svg?branch=master)](https://travis-ci.org/eriklieben/aurelia-materialize-css) [![GitHub version](https://img.shields.io/github/release/eriklieben/aurelia-materialize-css.svg)](https://img.shields.io/github/release/eriklieben/aurelia-materialize-css.svg)]
+[![npm version](https://img.shields.io/npm/v/aurelia-materialize-css.svg)](https://img.shields.io/npm/v/aurelia-materialize-css.svg)] [![Coveralls](https://img.shields.io/coveralls/eriklieben/aurelia-materialize-css.svg)](https://img.shields.io/coveralls/eriklieben/aurelia-materialize-css.svg)
 
 Custom elements and attributes to use MaterializeCSS with Aurelia.
 

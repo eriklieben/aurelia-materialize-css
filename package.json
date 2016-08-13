@@ -25,6 +25,7 @@
     "aurelia-polyfills": "^1.0.0",
     "aurelia-tools": "^0.2.4",
     "conventional-changelog": "1.1.0",
+    "coveralls": "^2.11.12",
     "del": "^2.2.1",
     "es6-module-loader": "^0.17.11",
     "gulp": "^3.9.1",
