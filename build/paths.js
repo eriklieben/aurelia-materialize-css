@@ -14,5 +14,5 @@ module.exports = {
     'typings/**/*.ts', 
     './jspm_packages/**/*.d.ts'
   ],
-  lcov: 'reports\coverage\lcov.info'
+  lcov: 'reports/coverage/lcov.info'
 };

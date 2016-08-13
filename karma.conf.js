@@ -63,7 +63,7 @@ module.exports = function(config) {
                     subdir: 'coverage'
                 },
                 {
-                    type: 'lcovonly',
+                    type: 'lcov',
                     dir: 'reports',
                     subdir: 'coverage',
                     file: 'lcov.info'
