@@ -20,3 +20,10 @@ install:
 script:
 - gulp build
 - gulp test
+notifications:
+  webhooks:
+    urls:
+      - $GITTER_WEBHOOK
+    on_success: always
+    on_failure: always
+    on_start: never
