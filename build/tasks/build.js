@@ -19,8 +19,14 @@ var tsProjectES6 = typescript.createProject('./tsconfig.json', { typescript: req
 var tsProjectAMD = typescript.createProject('./tsconfig.json', { typescript: require('typescript'), target: 'es5', module: 'amd' });
 var tsProjectCJS = typescript.createProject('./tsconfig.json', { typescript: require('typescript'), target: 'es5', module: 'commonjs' });
 var tsProjectSystem = typescript.createProject('./tsconfig.json', { typescript: require('typescript'), target: 'es5', module: 'system' });
-function build(tsProject, outputPath) {
-    return gulp.src(paths.dtsSrc.concat(paths.source))
+function build(tsProject, outputPath, es6) {
+    
+    var path = paths.dtsSrc.concat(paths.source);
+    if (es6 === undefined || es6 === null || !es6) {
+        path = paths.dtsSrc.concat(paths.source).concat('es6-typings/**/*.ts');
+    }
+    
+    return gulp.src(path)
       .pipe(plumber())
       .pipe(changed(outputPath, {extension: '.ts'}))
       .pipe(sourcemaps.init({loadMaps: true}))
@@ -30,7 +36,7 @@ function build(tsProject, outputPath) {
 }
 
 gulp.task('build-es6', function () {
-    return build(tsProjectES6, paths.output + 'es6');
+    return build(tsProjectES6, paths.output + 'es6', true);
 });
 
 gulp.task('build-ts', function() {

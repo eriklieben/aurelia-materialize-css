@@ -2,9 +2,9 @@
   "compileOnSave": false,
   "compilerOptions": {
     "rootDir": "src/",
-    "outDir": "wwwroot/dist",
+    "outDir": "dist/",
     "sourceMap": true,
-    "target": "es5",
+    "target": "es6",
     "module": "amd",
     "declaration": false,
     "noImplicitAny": false,
@@ -22,7 +22,7 @@
   ],
   "exclude": [
     "node_modules",
-    "wwwroot/jspm_packages"
+    "jspm_packages"
   ],
   "atom": {
     "rewriteTsconfig": false
