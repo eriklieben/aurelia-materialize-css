@@ -2,7 +2,7 @@
 
 [![Gitter](https://badges.gitter.im/aurelia-materialize-css/Lobby.svg)](https://gitter.im/aurelia-materialize-css/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge) 
 [![Build Status](https://travis-ci.org/eriklieben/aurelia-materialize-css.svg?branch=master)](https://travis-ci.org/eriklieben/aurelia-materialize-css) 
-[![Coverage Status](https://coveralls.io/repos/github/eriklieben/aurelia-materialize-css/badge.svg)](https://coveralls.io/github/eriklieben/aurelia-materialize-css)
+[![Coverage Status](https://coveralls.io/repos/github/eriklieben/aurelia-materialize-css/badge.svg?branch=master)](https://coveralls.io/github/eriklieben/aurelia-materialize-css?branch=master)
 [![GitHub version](https://img.shields.io/github/release/eriklieben/aurelia-materialize-css.svg)](https://img.shields.io/github/release/eriklieben/aurelia-materialize-css.svg)
 [![npm version](https://img.shields.io/npm/v/aurelia-materialize-css.svg)](https://img.shields.io/npm/v/aurelia-materialize-css.svg)
 
