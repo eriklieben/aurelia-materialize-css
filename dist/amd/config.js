@@ -20,6 +20,8 @@ define(["require", "exports"], function (require, exports) {
             this.pushpin = (this.prefix + "pushpin").trim();
             this.scrollSpy = (this.prefix + "scrollspy").trim();
             this.badge = (this.prefix + "badge").trim();
+            this.breadcrumb = (this.prefix + "breadcrumb").trim();
+            this.breadcrumbs = (this.prefix + "breadcrumbs").trim();
         }
         return Configuration;
     }());

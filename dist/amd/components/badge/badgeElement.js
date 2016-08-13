@@ -14,7 +14,7 @@ define(["require", "exports", "aurelia-framework", "./../../config"], function (
         }
         BadgeElement.prototype.attached = function () {
             this.element.classList.add("badge");
-            if (this.new || this.element.attributes.getNamedItem("new") !== undefined) {
+            if (this.new || this.element.attributes.getNamedItem("new") !== null) {
                 this.element.classList.add("new");
             }
         };
@@ -23,7 +23,9 @@ define(["require", "exports", "aurelia-framework", "./../../config"], function (
         };
         BadgeElement.prototype.newChanged = function () {
             if (this.element) {
-                (this.new) ? this.element.classList.add("new") : this.element.classList.remove("new");
+                (!this.new && this.element.attributes.getNamedItem("new") === null) ?
+                    this.element.classList.remove("new") :
+                    this.element.classList.add("new");
             }
         };
         __decorate([

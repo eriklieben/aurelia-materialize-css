@@ -25,6 +25,8 @@ define(["require", "exports", "./config", "@eriklieben/materialize-css"], functi
             "./javascript/pushpin/pushpinAttribute",
             "./javascript/scrollspy/scrollspyAttribute",
             "./components/badge/badgeAttribute",
+            "./components/breadcrumbs/breadcrumbAttribute",
+            "./components/breadcrumbs/breadcrumbsAttribute",
         ];
         var elements = [
             "./javascript/collapsible/collapsibleElement",
@@ -42,6 +44,8 @@ define(["require", "exports", "./config", "@eriklieben/materialize-css"], functi
             "./javascript/pushpin/pushpinElement",
             "./javascript/scrollspy/scrollspyElement",
             "./components/badge/badgeElement",
+            "./components/breadcrumbs/breadcrumbElement",
+            "./components/breadcrumbs/breadcrumbsElement",
         ];
         if (options.attributeFilter) {
             attributes = attributes.filter(options.attributeFilter);

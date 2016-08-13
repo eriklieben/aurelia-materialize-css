@@ -44,6 +44,9 @@ export function configure(config: FrameworkConfiguration, options?: IMaterialize
         "./javascript/scrollspy/scrollspyAttribute",
 
         "./components/badge/badgeAttribute",
+
+        "./components/breadcrumbs/breadcrumbAttribute",
+        "./components/breadcrumbs/breadcrumbsAttribute",
     ];
 
     let elements = [
@@ -68,6 +71,9 @@ export function configure(config: FrameworkConfiguration, options?: IMaterialize
         "./javascript/scrollspy/scrollspyElement",
 
         "./components/badge/badgeElement",
+
+        "./components/breadcrumbs/breadcrumbElement",
+        "./components/breadcrumbs/breadcrumbsElement",
     ];
 
     // Filter out attributes and elements

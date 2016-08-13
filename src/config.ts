@@ -25,6 +25,9 @@ export class Configuration implements IConfiguration {
     public scrollSpy = `${this.prefix}scrollspy`.trim();
 
     public badge = `${this.prefix}badge`.trim();
+
+    public breadcrumb = `${this.prefix}breadcrumb`.trim();
+    public breadcrumbs = `${this.prefix}breadcrumbs`.trim();
 }
 
 export interface IConfiguration {
@@ -53,6 +56,9 @@ export interface IConfiguration {
     scrollSpy?: string;
 
     badge?: string;
+
+    breadcrumb?: string;
+    breadcrumbs?: string;
 }
 
 export var config: IConfiguration = new Configuration();

@@ -69,7 +69,17 @@ describe("the Aurelia Materialize CSS configuration with the option enableAttrib
     it("must register the badge attribute", () => {
         expect(sut.resources)
             .toContain("./components/badge/badgeAttribute");
-    });    
+    });
+
+    it("must register the breadcrumb attribute", () => {
+        expect(sut.resources)
+            .toContain("./components/breadcrumbs/breadcrumbAttribute");
+    });
+
+    it("must register the breadcrumbs attribute", () => {
+        expect(sut.resources)
+            .toContain("./components/breadcrumbs/breadcrumbsAttribute");
+    });
 });
 
 describe("the Aurelia Materialize CSS configuration with the option enableAttributes false", () => {
@@ -131,6 +141,16 @@ describe("the Aurelia Materialize CSS configuration with the option enableAttrib
         expect(sut.resources)
             .not.toContain("./components/badge/badgeAttribute");
     });
+
+     it("must not register the breadcrumb attribute", () => {
+        expect(sut.resources)
+            .not.toContain("./components/breadcrumbs/breadcrumbAttribute");
+    });
+
+     it("must not register the breadcrumbs attribute", () => {
+        expect(sut.resources)
+            .not.toContain("./components/breadcrumbs/breadcrumbsAttribute");
+    });    
 });
 
 describe("the Aurelia Materialize CSS configuration with the option enableElements true", () => {
@@ -216,6 +236,16 @@ describe("the Aurelia Materialize CSS configuration with the option enableElemen
     it("must register the badge element", () => {
         expect(sut.resources)
             .toContain("./components/badge/badgeElement");
+    });
+
+    it("must register the breadcrumb element", () => {
+        expect(sut.resources)
+            .toContain("./components/breadcrumbs/breadcrumbElement");
+    });
+
+    it("must register the breadcrumbs element", () => {
+        expect(sut.resources)
+            .toContain("./components/breadcrumbs/breadcrumbsElement");
     });    
 });
 
@@ -303,4 +333,14 @@ describe("the Aurelia Materialize CSS configuration with the option enableElemen
         expect(sut.resources)
             .not.toContain("./components/badge/badgeElement");
     });
+
+    it("must not register the breadcrumb element", () => {
+        expect(sut.resources)
+            .not.toContain("./components/breadcrumbs/breadcrumbElement");
+    });
+
+    it("must not register the breadcrumbs element", () => {
+        expect(sut.resources)
+            .not.toContain("./components/breadcrumbs/breadcrumbsElement");
+    });    
 });

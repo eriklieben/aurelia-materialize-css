@@ -73,4 +73,16 @@ describe("the Aurelia Materialize CSS config", () => {
     it("must have a property badge with the default value 'm:badge'", () => {
         expect(config.badge).toBe("m:badge");
     });
+
+    it("must have a property breadcrumb with the default value 'm:breadcrumb'", () => {
+        expect(config.breadcrumb).toBe("m:breadcrumb");
+    });
+
+    it("must have a property breadcrumb with the default value 'm:breadcrumbs'", () => {
+        expect(config.breadcrumb).toBe("m:breadcrumb");
+    });
+
+    it("must have a property breadcrumbs with the default value 'm:breadcrumbs'", () => {
+        expect(config.breadcrumbs).toBe("m:breadcrumbs");
+    });
 });
