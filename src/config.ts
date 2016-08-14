@@ -28,6 +28,9 @@ export class Configuration implements IConfiguration {
 
     public breadcrumb = `${this.prefix}breadcrumb`.trim();
     public breadcrumbs = `${this.prefix}breadcrumbs`.trim();
+
+    public button = `${this.prefix}button`.trim();
+    public allowedWaves = ["light", "red", "yellow", "orange", "purple", "green", "teal"];
 }
 
 export interface IConfiguration {
@@ -59,6 +62,9 @@ export interface IConfiguration {
 
     breadcrumb?: string;
     breadcrumbs?: string;
+
+    button?: string;
+    allowedWaves?: Array<string>;
 }
 
 export var config: IConfiguration = new Configuration();

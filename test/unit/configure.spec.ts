@@ -80,6 +80,11 @@ describe("the Aurelia Materialize CSS configuration with the option enableAttrib
         expect(sut.resources)
             .toContain("./components/breadcrumbs/breadcrumbsAttribute");
     });
+
+    it("must register the button attribute", () => {
+        expect(sut.resources)
+            .toContain("./components/button/buttonAttribute");
+    });
 });
 
 describe("the Aurelia Materialize CSS configuration with the option enableAttributes false", () => {
@@ -150,7 +155,12 @@ describe("the Aurelia Materialize CSS configuration with the option enableAttrib
      it("must not register the breadcrumbs attribute", () => {
         expect(sut.resources)
             .not.toContain("./components/breadcrumbs/breadcrumbsAttribute");
-    });    
+    }); 
+
+    it("must not register the button attribute", () => {
+        expect(sut.resources)
+            .not.toContain("./components/button/buttonAttribute");
+    });       
 });
 
 describe("the Aurelia Materialize CSS configuration with the option enableElements true", () => {
@@ -247,6 +257,11 @@ describe("the Aurelia Materialize CSS configuration with the option enableElemen
         expect(sut.resources)
             .toContain("./components/breadcrumbs/breadcrumbsElement");
     });    
+
+    it("must register the button element", () => {
+        expect(sut.resources)
+            .toContain("./components/button/buttonElement");
+    }); 
 });
 
 describe("the Aurelia Materialize CSS configuration with the option enableElements false", () => {
@@ -342,5 +357,10 @@ describe("the Aurelia Materialize CSS configuration with the option enableElemen
     it("must not register the breadcrumbs element", () => {
         expect(sut.resources)
             .not.toContain("./components/breadcrumbs/breadcrumbsElement");
-    });    
+    });
+
+    it("must not register the button element", () => {
+        expect(sut.resources)
+            .not.toContain("./components/button/buttonElement");
+    });       
 });

@@ -22,6 +22,8 @@ define(["require", "exports"], function (require, exports) {
             this.badge = (this.prefix + "badge").trim();
             this.breadcrumb = (this.prefix + "breadcrumb").trim();
             this.breadcrumbs = (this.prefix + "breadcrumbs").trim();
+            this.button = (this.prefix + "button").trim();
+            this.allowedWaves = ["light", "red", "yellow", "orange", "purple", "green", "teal"];
         }
         return Configuration;
     }());

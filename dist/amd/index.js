@@ -27,6 +27,7 @@ define(["require", "exports", "./config", "@eriklieben/materialize-css"], functi
             "./components/badge/badgeAttribute",
             "./components/breadcrumbs/breadcrumbAttribute",
             "./components/breadcrumbs/breadcrumbsAttribute",
+            "./components/button/buttonAttribute",
         ];
         var elements = [
             "./javascript/collapsible/collapsibleElement",
@@ -46,6 +47,7 @@ define(["require", "exports", "./config", "@eriklieben/materialize-css"], functi
             "./components/badge/badgeElement",
             "./components/breadcrumbs/breadcrumbElement",
             "./components/breadcrumbs/breadcrumbsElement",
+            "./components/button/buttonElement",
         ];
         if (options.attributeFilter) {
             attributes = attributes.filter(options.attributeFilter);

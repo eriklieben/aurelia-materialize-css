@@ -85,4 +85,12 @@ describe("the Aurelia Materialize CSS config", () => {
     it("must have a property breadcrumbs with the default value 'm:breadcrumbs'", () => {
         expect(config.breadcrumbs).toBe("m:breadcrumbs");
     });
+
+    it("must have a property badge with the default value 'm:button'", () => {
+        expect(config.button).toBe("m:button");
+    });  
+    
+    it("must have a property allowedWaves with the default allowed waves", () => {
+        expect(config.allowedWaves).toEqual(["light", "red", "yellow", "orange", "purple", "green", "teal"]);
+    });    
 });

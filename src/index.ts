@@ -47,6 +47,8 @@ export function configure(config: FrameworkConfiguration, options?: IMaterialize
 
         "./components/breadcrumbs/breadcrumbAttribute",
         "./components/breadcrumbs/breadcrumbsAttribute",
+
+        "./components/button/buttonAttribute",
     ];
 
     let elements = [
@@ -74,6 +76,8 @@ export function configure(config: FrameworkConfiguration, options?: IMaterialize
 
         "./components/breadcrumbs/breadcrumbElement",
         "./components/breadcrumbs/breadcrumbsElement",
+
+        "./components/button/buttonElement",
     ];
 
     // Filter out attributes and elements
