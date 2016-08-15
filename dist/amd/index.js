@@ -28,6 +28,12 @@ define(["require", "exports", "./config", "@eriklieben/materialize-css"], functi
             "./components/breadcrumbs/breadcrumbAttribute",
             "./components/breadcrumbs/breadcrumbsAttribute",
             "./components/button/buttonAttribute",
+            "./components/card/cardAttribute",
+            "./components/card/cardTitleAttribute",
+            "./components/card/cardActionAttribute",
+            "./components/card/cardImageAttribute",
+            "./components/card/cardRevealAttribute",
+            "./components/card/cardPanelAttribute",
         ];
         var elements = [
             "./javascript/collapsible/collapsibleElement",
@@ -48,6 +54,12 @@ define(["require", "exports", "./config", "@eriklieben/materialize-css"], functi
             "./components/breadcrumbs/breadcrumbElement",
             "./components/breadcrumbs/breadcrumbsElement",
             "./components/button/buttonElement",
+            "./components/card/cardElement",
+            "./components/card/cardTitleElement",
+            "./components/card/cardActionElement",
+            "./components/card/cardImageElement",
+            "./components/card/cardRevealElement",
+            "./components/card/cardPanelElement",
         ];
         if (options.attributeFilter) {
             attributes = attributes.filter(options.attributeFilter);

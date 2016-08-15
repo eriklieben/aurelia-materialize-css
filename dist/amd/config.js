@@ -24,6 +24,12 @@ define(["require", "exports"], function (require, exports) {
             this.breadcrumbs = (this.prefix + "breadcrumbs").trim();
             this.button = (this.prefix + "button").trim();
             this.allowedWaves = ["light", "red", "yellow", "orange", "purple", "green", "teal"];
+            this.card = (this.prefix + "card").trim();
+            this.cardTitle = (this.prefix + "card-title").trim();
+            this.cardAction = (this.prefix + "card-action").trim();
+            this.cardImage = (this.prefix + "card-image").trim();
+            this.cardReveal = (this.prefix + "card-reveal").trim();
+            this.cardPanel = (this.prefix + "card-panel").trim();
         }
         return Configuration;
     }());

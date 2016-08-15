@@ -85,6 +85,36 @@ describe("the Aurelia Materialize CSS configuration with the option enableAttrib
         expect(sut.resources)
             .toContain("./components/button/buttonAttribute");
     });
+
+    it("must register the card attribute", () => {
+        expect(sut.resources)
+            .toContain("./components/card/cardAttribute");
+    });
+
+    it("must register the cardTitle attribute", () => {
+        expect(sut.resources)
+            .toContain("./components/card/cardTitleAttribute");
+    });
+
+    it("must register the cardAction attribute", () => {
+        expect(sut.resources)
+            .toContain("./components/card/cardActionAttribute");
+    });
+
+    it("must register the cardImage attribute", () => {
+        expect(sut.resources)
+            .toContain("./components/card/cardImageAttribute");
+    });
+
+    it("must register the cardReveal attribute", () => {
+        expect(sut.resources)
+            .toContain("./components/card/cardRevealAttribute");
+    });
+
+    it("must register the cardPanel attribute", () => {
+        expect(sut.resources)
+            .toContain("./components/card/cardPanelAttribute");
+    });    
 });
 
 describe("the Aurelia Materialize CSS configuration with the option enableAttributes false", () => {
@@ -161,6 +191,36 @@ describe("the Aurelia Materialize CSS configuration with the option enableAttrib
         expect(sut.resources)
             .not.toContain("./components/button/buttonAttribute");
     });       
+
+    it("must register the card attribute", () => {
+        expect(sut.resources)
+            .not.toContain("./components/card/cardAttribute");
+    });
+
+    it("must register the cardTitle attribute", () => {
+        expect(sut.resources)
+            .not.toContain("./components/card/cardTitleAttribute");
+    });
+
+    it("must register the cardAction attribute", () => {
+        expect(sut.resources)
+            .not.toContain("./components/card/cardActionAttribute");
+    });
+
+    it("must register the cardImage attribute", () => {
+        expect(sut.resources)
+            .not.toContain("./components/card/cardImageAttribute");
+    });
+
+    it("must not register the cardReveal attribute", () => {
+        expect(sut.resources)
+            .not.toContain("./components/card/cardRevealAttribute");
+    });
+
+    it("must not register the cardPanel attribute", () => {
+        expect(sut.resources)
+            .not.toContain("./components/card/cardPanelAttribute");
+    });    
 });
 
 describe("the Aurelia Materialize CSS configuration with the option enableElements true", () => {
@@ -262,6 +322,36 @@ describe("the Aurelia Materialize CSS configuration with the option enableElemen
         expect(sut.resources)
             .toContain("./components/button/buttonElement");
     }); 
+
+    it("must register the card element", () => {
+        expect(sut.resources)
+            .toContain("./components/card/cardElement");
+    });
+
+    it("must register the cardTitle element", () => {
+        expect(sut.resources)
+            .toContain("./components/card/cardTitleElement");
+    });
+
+    it("must register the cardAction element", () => {
+        expect(sut.resources)
+            .toContain("./components/card/cardActionElement");
+    });
+
+    it("must register the cardImage element", () => {
+        expect(sut.resources)
+            .toContain("./components/card/cardImageElement");
+    });
+
+    it("must register the cardReveal element", () => {
+        expect(sut.resources)
+            .toContain("./components/card/cardRevealElement");
+    });
+
+    it("must register the cardPanel element", () => {
+        expect(sut.resources)
+            .toContain("./components/card/cardPanelElement");
+    });    
 });
 
 describe("the Aurelia Materialize CSS configuration with the option enableElements false", () => {
@@ -362,5 +452,35 @@ describe("the Aurelia Materialize CSS configuration with the option enableElemen
     it("must not register the button element", () => {
         expect(sut.resources)
             .not.toContain("./components/button/buttonElement");
-    });       
+    });  
+ 
+    it("must not register the card element", () => {
+        expect(sut.resources)
+            .not.toContain("./components/card/cardElement");
+    });
+
+    it("must not register the cardTitle element", () => {
+        expect(sut.resources)
+            .not.toContain("./components/card/cardTitleElement");
+    });
+
+    it("must not register the cardAction element", () => {
+        expect(sut.resources)
+            .not.toContain("./components/card/cardActionElement");
+    });
+
+    it("must not register the cardImage element", () => {
+        expect(sut.resources)
+            .not.toContain("./components/card/cardImageElement");
+    });
+
+    it("must not register the cardReveal element", () => {
+        expect(sut.resources)
+            .not.toContain("./components/card/cardRevealElement");
+    });
+
+    it("must not register the cardPanel element", () => {
+        expect(sut.resources)
+            .not.toContain("./components/card/cardPanelElement");
+    });
 });
