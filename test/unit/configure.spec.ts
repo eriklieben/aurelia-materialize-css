@@ -124,7 +124,12 @@ describe("the Aurelia Materialize CSS configuration with the option enableAttrib
     it("must register the pickadate (forms) attribute", () => {
         expect(sut.resources)
             .toContain("./components/forms/pickadateAttribute");
-    });        
+    });
+
+    it("must register the icon attribute", () => {
+        expect(sut.resources)
+            .toContain("./components/icon/iconAttribute");
+    });           
 });
 
 describe("the Aurelia Materialize CSS configuration with the option enableAttributes false", () => {
@@ -240,7 +245,12 @@ describe("the Aurelia Materialize CSS configuration with the option enableAttrib
     it("must not register the pickadate (forms) attribute", () => {
         expect(sut.resources)
             .not.toContain("./components/forms/pickadateAttribute");
-    });    
+    });
+
+    it("must not register the icon attribute", () => {
+        expect(sut.resources)
+            .not.toContain("./components/icon/iconAttribute");
+    });
 });
 
 describe("the Aurelia Materialize CSS configuration with the option enableElements true", () => {
@@ -371,7 +381,12 @@ describe("the Aurelia Materialize CSS configuration with the option enableElemen
     it("must register the cardPanel element", () => {
         expect(sut.resources)
             .toContain("./components/card/cardPanelElement");
-    });    
+    });
+
+    it("must register the icon element", () => {
+        expect(sut.resources)
+            .toContain("./components/icon/iconElement");
+    });   
 });
 
 describe("the Aurelia Materialize CSS configuration with the option enableElements false", () => {
@@ -503,4 +518,9 @@ describe("the Aurelia Materialize CSS configuration with the option enableElemen
         expect(sut.resources)
             .not.toContain("./components/card/cardPanelElement");
     });
+
+    it("must not register the icon element", () => {
+        expect(sut.resources)
+            .not.toContain("./components/icon/iconElement");
+    });    
 });

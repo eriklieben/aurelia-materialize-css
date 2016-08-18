@@ -32,6 +32,7 @@ define(["require", "exports"], function (require, exports) {
             this.cardPanel = (this.prefix + "card-panel").trim();
             this.materialSelect = (this.prefix + "select").trim();
             this.pickadate = (this.prefix + "pickadate").trim();
+            this.icon = (this.prefix + "icon").trim();
         }
         return Configuration;
     }());

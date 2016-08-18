@@ -59,6 +59,8 @@ export function configure(config: FrameworkConfiguration, options?: IMaterialize
 
         "./components/forms/selectAttribute",
         "./components/forms/pickadateAttribute",
+
+        "./components/icon/iconAttribute",
     ];
 
     let elements = [
@@ -95,6 +97,8 @@ export function configure(config: FrameworkConfiguration, options?: IMaterialize
         "./components/card/cardImageElement",
         "./components/card/cardRevealElement",
         "./components/card/cardPanelElement",
+
+        "./components/icon/iconElement",
     ];
 
     // Filter out attributes and elements

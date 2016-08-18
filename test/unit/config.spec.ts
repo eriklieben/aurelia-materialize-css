@@ -125,4 +125,8 @@ describe("the Aurelia Materialize CSS config", () => {
     it("must have a property pickadate with the default value 'm:pickadate'", () => {
         expect(config.pickadate).toBe("m:pickadate");
     });
+
+    it("must have a property icon with the default value 'm:icon'", () => {
+        expect(config.icon).toBe("m:icon");
+    });
 });

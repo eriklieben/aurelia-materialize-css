@@ -41,6 +41,8 @@ export class Configuration implements IConfiguration {
 
     public materialSelect = `${this.prefix}select`.trim();
     public pickadate = `${this.prefix}pickadate`.trim();
+
+    public icon = `${this.prefix}icon`.trim();
 }
 
 export interface IConfiguration {
@@ -85,6 +87,8 @@ export interface IConfiguration {
 
     materialSelect?: string;
     pickadate?: string;
+
+    icon?: string;
 }
 
 export var config: IConfiguration = new Configuration();

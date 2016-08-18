@@ -36,6 +36,7 @@ define(["require", "exports", "./config", "@eriklieben/materialize-css"], functi
             "./components/card/cardPanelAttribute",
             "./components/forms/selectAttribute",
             "./components/forms/pickadateAttribute",
+            "./components/icon/iconAttribute",
         ];
         var elements = [
             "./javascript/collapsible/collapsibleElement",
@@ -62,6 +63,7 @@ define(["require", "exports", "./config", "@eriklieben/materialize-css"], functi
             "./components/card/cardImageElement",
             "./components/card/cardRevealElement",
             "./components/card/cardPanelElement",
+            "./components/icon/iconElement",
         ];
         if (options.attributeFilter) {
             attributes = attributes.filter(options.attributeFilter);
