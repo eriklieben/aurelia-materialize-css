@@ -116,5 +116,13 @@ describe("the Aurelia Materialize CSS config", () => {
 
     it("must have a property cardPanel with the default value 'm:card-panel'", () => {
         expect(config.cardPanel).toBe("m:card-panel");
-    });    
+    });
+
+    it("must have a property materialSelect with the default value 'm:select'", () => {
+        expect(config.materialSelect).toBe("m:select");
+    });
+
+    it("must have a property pickadate with the default value 'm:pickadate'", () => {
+        expect(config.pickadate).toBe("m:pickadate");
+    });
 });

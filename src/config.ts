@@ -38,6 +38,9 @@ export class Configuration implements IConfiguration {
     public cardImage = `${this.prefix}card-image`.trim();
     public cardReveal = `${this.prefix}card-reveal`.trim();
     public cardPanel = `${this.prefix}card-panel`.trim();
+
+    public materialSelect = `${this.prefix}select`.trim();
+    public pickadate = `${this.prefix}pickadate`.trim();
 }
 
 export interface IConfiguration {
@@ -79,6 +82,9 @@ export interface IConfiguration {
     cardImage?: string;
     cardReveal?: string;
     cardPanel?: string;
+
+    materialSelect?: string;
+    pickadate?: string;
 }
 
 export var config: IConfiguration = new Configuration();

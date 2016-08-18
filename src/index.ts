@@ -56,6 +56,9 @@ export function configure(config: FrameworkConfiguration, options?: IMaterialize
         "./components/card/cardImageAttribute",
         "./components/card/cardRevealAttribute",
         "./components/card/cardPanelAttribute",
+
+        "./components/forms/selectAttribute",
+        "./components/forms/pickadateAttribute",
     ];
 
     let elements = [

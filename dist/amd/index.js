@@ -34,6 +34,8 @@ define(["require", "exports", "./config", "@eriklieben/materialize-css"], functi
             "./components/card/cardImageAttribute",
             "./components/card/cardRevealAttribute",
             "./components/card/cardPanelAttribute",
+            "./components/forms/selectAttribute",
+            "./components/forms/pickadateAttribute",
         ];
         var elements = [
             "./javascript/collapsible/collapsibleElement",
