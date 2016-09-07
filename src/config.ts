@@ -49,6 +49,14 @@ export class Configuration implements IConfiguration {
     public collectionHeader = `${this.prefix}collection-header`.trim();
     public linkCollection = `${this.prefix}link-collection`.trim();
     public collectionLinkItem = `${this.prefix}collection-link-item`.trim();
+
+    public set(config: IConfiguration) {
+        for (let attrname in config) {
+            if (config.hasOwnProperty(attrname)) {
+                this[attrname] = config[attrname];
+            }
+        }
+    }
 }
 
 export interface IConfiguration {
@@ -101,6 +109,8 @@ export interface IConfiguration {
     collectionHeader?: string;
     linkCollection?: string;
     collectionLinkItem?: string;
+
+    set(config: IConfiguration): void;
 }
 
 export var config: IConfiguration = new Configuration();

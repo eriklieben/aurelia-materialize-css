@@ -39,6 +39,13 @@ define(["require", "exports"], function (require, exports) {
             this.linkCollection = (this.prefix + "link-collection").trim();
             this.collectionLinkItem = (this.prefix + "collection-link-item").trim();
         }
+        Configuration.prototype.set = function (config) {
+            for (var attrname in config) {
+                if (config.hasOwnProperty(attrname)) {
+                    this[attrname] = config[attrname];
+                }
+            }
+        };
         return Configuration;
     }());
     exports.Configuration = Configuration;

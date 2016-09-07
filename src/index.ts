@@ -27,7 +27,7 @@ export interface IMaterializeCssOptions {
 export function configure(config: FrameworkConfiguration, options?: IMaterializeCssOptions) {
 
     options = Object.assign(new MaterializeCssOptions(), options);
-    materialConfig.config = options.configuration;
+    materialConfig.config.set(options.configuration);
 
     let attributes = [
         "./javascript/collapsible/collapsibleAttribute",

@@ -14,7 +14,7 @@ define(["require", "exports", "aurelia-framework", "./config", "@eriklieben/mate
     exports.MaterializeCssOptions = MaterializeCssOptions;
     function configure(config, options) {
         options = Object.assign(new MaterializeCssOptions(), options);
-        materialConfig.config = options.configuration;
+        materialConfig.config.set(options.configuration);
         var attributes = [
             "./javascript/collapsible/collapsibleAttribute",
             "./javascript/collapsible/collapsibleBodyAttribute",
