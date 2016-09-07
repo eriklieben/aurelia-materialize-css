@@ -33,6 +33,11 @@ define(["require", "exports"], function (require, exports) {
             this.materialSelect = (this.prefix + "select").trim();
             this.pickadate = (this.prefix + "pickadate").trim();
             this.icon = (this.prefix + "icon").trim();
+            this.collection = (this.prefix + "collection").trim();
+            this.collectionItem = (this.prefix + "collection-item").trim();
+            this.collectionHeader = (this.prefix + "collection-header").trim();
+            this.linkCollection = (this.prefix + "link-collection").trim();
+            this.collectionLinkItem = (this.prefix + "collection-link-item").trim();
         }
         return Configuration;
     }());

@@ -2,7 +2,7 @@ import { StageComponent } from "aurelia-testing";
 import { config } from "./../../../../src/config";
 import { bootstrap } from "aurelia-bootstrapper";
 
-xdescribe("the Aurelia Materialize CSS CollectionItemElement", () => {
+describe("the Aurelia Materialize CSS CollectionItemElement", () => {
     let sut;
 
     beforeEach(() =>
@@ -10,6 +10,18 @@ xdescribe("the Aurelia Materialize CSS CollectionItemElement", () => {
                 .withResources("./../../../../base/dist/amd/components/collections/collectionItemElement"));
 
     afterEach(() => sut.dispose());
+
+    it("must add the class value on the element", done =>
+        // arrange & act
+        sut.inView('<m:collection-item class.bind="class"></m:collection-item>')
+            .boundTo({ class: "someclass"})
+            .create(bootstrap)
+        // assert
+        .then(() => {
+            const element = document.querySelector("li[ref]");
+            expect(element.classList).toContain("someclass");
+        })
+        .then(done));
 
     it("must add the class dismissable if the attribute exists on the collection item", done =>
         //arrange

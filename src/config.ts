@@ -43,6 +43,12 @@ export class Configuration implements IConfiguration {
     public pickadate = `${this.prefix}pickadate`.trim();
 
     public icon = `${this.prefix}icon`.trim();
+
+    public collection = `${this.prefix}collection`.trim();
+    public collectionItem = `${this.prefix}collection-item`.trim();
+    public collectionHeader = `${this.prefix}collection-header`.trim();
+    public linkCollection = `${this.prefix}link-collection`.trim();
+    public collectionLinkItem = `${this.prefix}collection-link-item`.trim();
 }
 
 export interface IConfiguration {
@@ -89,6 +95,12 @@ export interface IConfiguration {
     pickadate?: string;
 
     icon?: string;
+
+    collection?: string;
+    collectionItem?: string;
+    collectionHeader?: string;
+    linkCollection?: string;
+    collectionLinkItem?: string;
 }
 
 export var config: IConfiguration = new Configuration();

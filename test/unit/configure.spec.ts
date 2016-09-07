@@ -386,7 +386,32 @@ describe("the Aurelia Materialize CSS configuration with the option enableElemen
     it("must register the icon element", () => {
         expect(sut.resources)
             .toContain("./components/icon/iconElement");
-    });   
+    });
+
+    it("must register the collection element", () => {
+        expect(sut.resources)
+            .toContain("./components/collections/collectionElement");
+    });       
+
+    it("must register the collection header element", () => {
+        expect(sut.resources)
+            .toContain("./components/collections/collectionHeaderElement");
+    }); 
+
+    it("must register the collection item element", () => {
+        expect(sut.resources)
+            .toContain("./components/collections/collectionItemElement");
+    }); 
+
+    it("must register the link collection element", () => {
+        expect(sut.resources)
+            .toContain("./components/collections/linkCollectionElement");
+    }); 
+
+    it("must register the collection link item element", () => {
+        expect(sut.resources)
+            .toContain("./components/collections/collectionLinkItemElement");
+    });     
 });
 
 describe("the Aurelia Materialize CSS configuration with the option enableElements false", () => {
@@ -522,5 +547,30 @@ describe("the Aurelia Materialize CSS configuration with the option enableElemen
     it("must not register the icon element", () => {
         expect(sut.resources)
             .not.toContain("./components/icon/iconElement");
-    });    
+    });
+
+    it("must not register the collection element", () => {
+        expect(sut.resources)
+            .not.toContain("./components/collections/collectionElement");
+    });       
+
+    it("must not register the collection header element", () => {
+        expect(sut.resources)
+            .not.toContain("./components/collections/collectionHeaderElement");
+    }); 
+
+    it("must not register the collection item element", () => {
+        expect(sut.resources)
+            .not.toContain("./components/collections/collectionItemElement");
+    }); 
+
+    it("must not register the link collection element", () => {
+        expect(sut.resources)
+            .not.toContain("./components/collections/linkCollectionElement");
+    }); 
+
+    it("must not register the collection link item element", () => {
+        expect(sut.resources)
+            .not.toContain("./components/collections/collectionLinkItemElement");
+    });     
 });

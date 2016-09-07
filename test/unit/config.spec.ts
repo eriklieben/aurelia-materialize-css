@@ -129,4 +129,24 @@ describe("the Aurelia Materialize CSS config", () => {
     it("must have a property icon with the default value 'm:icon'", () => {
         expect(config.icon).toBe("m:icon");
     });
+
+    it("must have a property collection with the default value 'm:collection'", () => {
+        expect(config.collection).toBe("m:collection");
+    });    
+
+    it("must have a property collectionItem with the default value 'm:collection-item'", () => {
+        expect(config.collectionItem).toBe("m:collection-item");
+    }); 
+
+    it("must have a property collectionHeader with the default value 'm:collection-header'", () => {
+        expect(config.collectionHeader).toBe("m:collection-header");
+    }); 
+
+    it("must have a property linkCollection with the default value 'm:link-collection'", () => {
+        expect(config.linkCollection).toBe("m:link-collection");
+    }); 
+
+    it("must have a property collectionLinkItem with the default value 'm:collection-link-item'", () => {
+        expect(config.collectionLinkItem).toBe("m:collection-link-item");
+    }); 
 });

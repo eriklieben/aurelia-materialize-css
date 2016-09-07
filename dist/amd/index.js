@@ -65,6 +65,11 @@ define(["require", "exports", "aurelia-framework", "./config", "@eriklieben/mate
             "./components/card/cardRevealElement",
             "./components/card/cardPanelElement",
             "./components/icon/iconElement",
+            "./components/collections/collectionElement",
+            "./components/collections/collectionHeaderElement",
+            "./components/collections/collectionItemElement",
+            "./components/collections/linkCollectionElement",
+            "./components/collections/collectionLinkItemElement",
         ];
         if (options.attributeFilter) {
             attributes = attributes.filter(options.attributeFilter);

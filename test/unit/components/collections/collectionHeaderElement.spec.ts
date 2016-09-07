@@ -2,7 +2,7 @@ import { StageComponent } from "aurelia-testing";
 import { config } from "./../../../../src/config";
 import { bootstrap } from "aurelia-bootstrapper";
 
-xdescribe("the Aurelia Materialize CSS CollectionHeaderElement", () => {
+describe("the Aurelia Materialize CSS CollectionHeaderElement", () => {
     let sut;
 
     beforeEach(() =>
@@ -11,6 +11,18 @@ xdescribe("the Aurelia Materialize CSS CollectionHeaderElement", () => {
                 .inView(`<ul><m:collection-header></m:collection-header></ul>`));
 
     afterEach(() => sut.dispose());
+
+    it("must add the class value on the element", done =>
+        // arrange & act
+        sut.inView('<m:collection-header class.bind="class"></m:collection-header>')
+            .boundTo({ class: "someclass"})
+            .create(bootstrap)
+        // assert
+        .then(() => {
+            const element = document.querySelector("li[ref]");
+            expect(element.classList).toContain("someclass");
+        })
+        .then(done));
 
     it("must add the class 'with-header' to the parent element on attached if non existing", done =>
         //arrange

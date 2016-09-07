@@ -29,6 +29,7 @@ describe("the Aurelia Materialize CSS CardActionAttribute", () => {
             .then(() => expect(sut.element.classList).toContain("card-action"))
         // act
         .then(() => sut.detached())
+        .then(() => sut.unbind())
         // assert
         .then(() => expect(sut.element.classList).not.toContain("card-action"))
         .then(done));

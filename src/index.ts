@@ -101,6 +101,12 @@ export function configure(config: FrameworkConfiguration, options?: IMaterialize
         "./components/card/cardPanelElement",
 
         "./components/icon/iconElement",
+
+        "./components/collections/collectionElement",
+        "./components/collections/collectionHeaderElement",
+        "./components/collections/collectionItemElement",
+        "./components/collections/linkCollectionElement",
+        "./components/collections/collectionLinkItemElement",
     ];
 
     // Filter out attributes and elements

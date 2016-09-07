@@ -2,7 +2,7 @@ import { StageComponent } from "aurelia-testing";
 import { config } from "./../../../../src/config";
 import { bootstrap } from "aurelia-bootstrapper";
 
-xdescribe("the Aurelia Materialize CSS CollectionLinkItemElement", () => {
+describe("the Aurelia Materialize CSS CollectionLinkItemElement", () => {
     let sut;
 
     beforeEach(() =>
@@ -19,7 +19,6 @@ xdescribe("the Aurelia Materialize CSS CollectionLinkItemElement", () => {
         // assert
         .then(() => {
             const element = <HTMLAnchorElement> document.getElementsByClassName("collection-item")[0];
-            console.log(element);
             expect(element.href).toEqual("http://www.google.com/");
         })
         .then(done));
@@ -33,6 +32,29 @@ xdescribe("the Aurelia Materialize CSS CollectionLinkItemElement", () => {
         .then(() => {
             const element = <HTMLAnchorElement> document.getElementsByClassName("collection-item")[0];
             expect(element.classList).toContain("someclass");
+        })
+        .then(done));
+
+    it("must contain the class collection-item", done =>
+        // arrange & act
+        sut.inView('<m:collection-link-item></m:collection-link-item>')
+            .create(bootstrap)
+        // assert
+        .then(() => {
+            const element = <HTMLAnchorElement> document.getElementsByClassName("collection-item")[0];
+            expect(element.classList).toContain("collection-item");
+        })
+        .then(done));
+
+    it("must contain the class collection-item also if another class is bound", done =>
+        // arrange & act
+        sut.inView('<m:collection-link-item class.bind="class"></m:collection-link-item>')
+            .boundTo({ class: "someclass"})
+            .create(bootstrap)
+        // assert
+        .then(() => {
+            const element = <HTMLAnchorElement> document.getElementsByClassName("collection-item")[0];
+            expect(element.classList).toContain("collection-item");
         })
         .then(done));
 
