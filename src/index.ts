@@ -121,14 +121,14 @@ export function configure(config: FrameworkConfiguration, options?: IMaterialize
         config.globalResources(elements);
     }
 
-        // Load material icons stylesheet
+    // Load material icons stylesheet
     if (options.loadExternalMaterialIcons) {
         let stylesheet = DOM.createElement("link") as HTMLLinkElement;
         stylesheet.href = "https://fonts.googleapis.com/icon?family=Material+Icons";
         stylesheet.rel = "stylesheet";
         stylesheet.type = "text/css";
-        document.head.appendChild(stylesheet); 
-    }   
+        document.head.appendChild(stylesheet);
+    }
 }
 
 export default MaterializeCssOptions;

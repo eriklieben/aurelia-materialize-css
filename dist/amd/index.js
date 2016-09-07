@@ -1,9 +1,10 @@
-define(["require", "exports", "./config", "@eriklieben/materialize-css"], function (require, exports, materialConfig) {
+define(["require", "exports", "aurelia-framework", "./config", "@eriklieben/materialize-css"], function (require, exports, aurelia_framework_1, materialConfig) {
     "use strict";
     var MaterializeCssOptions = (function () {
         function MaterializeCssOptions() {
             this.enableAttributes = true;
             this.enableElements = true;
+            this.loadExternalMaterialIcons = true;
             this.attributeFilter = undefined;
             this.elementFilter = undefined;
             this.configuration = new materialConfig.Configuration();
@@ -76,6 +77,13 @@ define(["require", "exports", "./config", "@eriklieben/materialize-css"], functi
         }
         if (options.enableElements) {
             config.globalResources(elements);
+        }
+        if (options.loadExternalMaterialIcons) {
+            var stylesheet = aurelia_framework_1.DOM.createElement("link");
+            stylesheet.href = "https://fonts.googleapis.com/icon?family=Material+Icons";
+            stylesheet.rel = "stylesheet";
+            stylesheet.type = "text/css";
+            document.head.appendChild(stylesheet);
         }
     }
     exports.configure = configure;
