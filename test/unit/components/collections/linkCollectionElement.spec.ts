@@ -42,7 +42,7 @@ describe("the Aurelia Materialize CSS LinkCollectionElement", () => {
         // assert
         .then(() => {
             const element = document.querySelector("div[ref]");
-            expect(element.querySelectorAll("a[au-target-id='2']").length).toBe(2);
+            expect(element.querySelectorAll("a[au-target-id]").length).toBe(2);
         })
         .then(done));
    
