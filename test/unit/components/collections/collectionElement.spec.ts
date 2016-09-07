@@ -2,7 +2,7 @@ import { StageComponent } from "aurelia-testing";
 import { config } from "./../../../../src/config";
 import { bootstrap } from "aurelia-bootstrapper";
 
-fdescribe("the Aurelia Materialize CSS CollectionElement", () => {
+describe("the Aurelia Materialize CSS CollectionElement", () => {
     let sut;
 
     beforeEach(() =>
