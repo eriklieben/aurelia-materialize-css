@@ -1,10 +1,11 @@
 import "@eriklieben/materialize-css";
-import { FrameworkConfiguration } from "aurelia-framework";
+import { DOM, FrameworkConfiguration } from "aurelia-framework";
 import * as materialConfig from "./config";
 
 export class MaterializeCssOptions implements IMaterializeCssOptions {
     public enableAttributes = true;
     public enableElements = true;
+    public loadExternalMaterialIcons = true;
 
     public attributeFilter: (value: string, index: number, array: string[]) => boolean = undefined;
     public elementFilter: (value: string, index: number, array: string[]) => boolean = undefined;
@@ -15,6 +16,7 @@ export class MaterializeCssOptions implements IMaterializeCssOptions {
 export interface IMaterializeCssOptions {
     enableAttributes?: boolean;
     enableElements?: boolean;
+    loadExternalMaterialIcons?: boolean;
 
     attributeFilter?: (value: string, index: number, array: string[]) => boolean;
     elementFilter?: (value: string, index: number, array: string[]) => boolean;
@@ -118,6 +120,15 @@ export function configure(config: FrameworkConfiguration, options?: IMaterialize
     if (options.enableElements) {
         config.globalResources(elements);
     }
+
+        // Load material icons stylesheet
+    if (options.loadExternalMaterialIcons) {
+        let stylesheet = DOM.createElement("link") as HTMLLinkElement;
+        stylesheet.href = "https://fonts.googleapis.com/icon?family=Material+Icons";
+        stylesheet.rel = "stylesheet";
+        stylesheet.type = "text/css";
+        document.head.appendChild(stylesheet); 
+    }   
 }
 
 export default MaterializeCssOptions;
