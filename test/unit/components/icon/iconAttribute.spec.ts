@@ -25,6 +25,7 @@ describe("the Aurelia Materialize CSS IconAttribute", () => {
         sut
             .manuallyHandleLifecycle()
             .create(bootstrap)
+            .then(() => sut.bind())
             .then(() => sut.attached())
             .then(() => expect(sut.element.classList).toContain("material-icons"))
         // act
@@ -46,6 +47,7 @@ describe("the Aurelia Materialize CSS IconAttribute", () => {
         sut.inView("<span m:icon='size:large'></span>")
             .manuallyHandleLifecycle()
             .create(bootstrap)
+            .then(() => sut.bind())
             .then(() => sut.attached())
             .then(() => expect(sut.element.classList).toContain("large"))
         // act
@@ -67,6 +69,7 @@ describe("the Aurelia Materialize CSS IconAttribute", () => {
         sut.inView("<span m:icon='size:large;type:foo'></span>")
             .manuallyHandleLifecycle()
             .create(bootstrap)
+            .then(() => sut.bind())
             .then(() => sut.attached())
             .then(() =>  expect(sut.element.innerHTML).toBe("foo"))
         // act

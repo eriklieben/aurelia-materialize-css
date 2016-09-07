@@ -25,6 +25,7 @@ describe("the Aurelia Materialize CSS CollapsibleAttribute", () => {
         sut
             .manuallyHandleLifecycle()
             .create(bootstrap)
+            .then(() => sut.bind())
             .then(() => sut.attached())
             .then(() => expect(sut.element.classList).toContain("collapsible"))
         // act
@@ -41,6 +42,7 @@ describe("the Aurelia Materialize CSS CollapsibleAttribute", () => {
             .inView('<div m:collapsible="type:expandable"></div>')
             .manuallyHandleLifecycle()
             .create(bootstrap)
+            .then(() => sut.bind())
         // act
         .then(() => sut.attached())
         // assert
@@ -53,6 +55,7 @@ describe("the Aurelia Materialize CSS CollapsibleAttribute", () => {
             .inView('<div m:collapsible="type:expandable"></div>')
             .manuallyHandleLifecycle()
             .create(bootstrap)
+            .then(() => sut.bind())
             .then(() => sut.attached())
         // act
         .then(() => sut.detached())
@@ -77,6 +80,7 @@ describe("the Aurelia Materialize CSS CollapsibleAttribute", () => {
             .manuallyHandleLifecycle()
             .create(bootstrap)
         // act
+        .then(() => sut.bind())
         .then(() => sut.attached())
         // assert
         .then(() => {

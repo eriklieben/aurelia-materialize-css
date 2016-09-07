@@ -41,6 +41,7 @@ describe("the Aurelia Materialize CSS BoxedAttribute", () => {
         sut
             .manuallyHandleLifecycle()
             .create(bootstrap)
+            .then(() => sut.bind())
             .then(() => sut.attached())
             .then(() => expect(sut.element.classList).toContain("materialboxed"))
         // act

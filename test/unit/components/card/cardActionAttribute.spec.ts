@@ -24,6 +24,7 @@ describe("the Aurelia Materialize CSS CardActionAttribute", () => {
         sut
             .manuallyHandleLifecycle()
             .create(bootstrap)
+            .then(() => sut.bind())
             .then(() => sut.attached())
             .then(() => expect(sut.element.classList).toContain("card-action"))
         // act

@@ -38,6 +38,7 @@ describe("the Aurelia Materialize CSS PickADateAttribute", () => {
         spyOn($.fn, "stop");
         sut.manuallyHandleLifecycle()
             .create(bootstrap)
+            .then(() => sut.bind())
             .then(() => sut.attached())
         // act
         .then(() => sut.detached())
@@ -71,6 +72,7 @@ describe("the Aurelia Materialize CSS PickADateAttribute", () => {
         sut
             .manuallyHandleLifecycle()
             .create(bootstrap)
+            .then(() => sut.bind())
             .then(() => sut.attached())
             .then(() => expect(sut.element.classList).toContain("datepicker"))
         // act

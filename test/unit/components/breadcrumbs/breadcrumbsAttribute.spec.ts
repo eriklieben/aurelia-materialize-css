@@ -23,6 +23,7 @@ describe("the Aurelia Materialize CSS BreadcrumbsAttribute", () => {
         sut
             .manuallyHandleLifecycle()
             .create(bootstrap)
+            .then(() => sut.bind())
             .then(() => sut.attached())
             .then(() => expect(sut.element.classList).toContain("nav-wrapper"))
         // act

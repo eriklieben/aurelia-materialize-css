@@ -27,6 +27,7 @@ describe("the Aurelia Materialize CSS SelectAttribute", () => {
         spyOn($.fn, "material_select");
         sut.manuallyHandleLifecycle()
             .create(bootstrap)
+            .then(() => sut.bind())
             .then(() => sut.attached())
         // act
         .then(() => sut.detached())

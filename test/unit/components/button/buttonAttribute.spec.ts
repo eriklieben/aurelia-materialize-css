@@ -24,6 +24,7 @@ describe("the Aurelia Materialize CSS ButtonAttribute", () => {
         sut
             .manuallyHandleLifecycle()
             .create(bootstrap)
+            .then(() => sut.bind())
             .then(() => sut.attached())
             .then(() => expect(sut.element.classList).toContain("waves-effect"))
         // act
@@ -53,6 +54,7 @@ describe("the Aurelia Materialize CSS ButtonAttribute", () => {
         sut.inView("<span m:button='flat:true'></span>")
             .manuallyHandleLifecycle()
             .create(bootstrap)
+            .then(() => sut.bind())
             .then(() => sut.attached())
             .then(() => expect(sut.element.classList).toContain("btn-flat"))
         // act
@@ -82,6 +84,7 @@ describe("the Aurelia Materialize CSS ButtonAttribute", () => {
         sut.inView("<span m:button='floating:true'></span>")
             .manuallyHandleLifecycle()
             .create(bootstrap)
+            .then(() => sut.bind())
             .then(() => sut.attached())
             .then(() => expect(sut.element.classList).toContain("btn-floating"))
         // act
@@ -103,6 +106,7 @@ describe("the Aurelia Materialize CSS ButtonAttribute", () => {
         sut.inView("<span m:button='large:true'></span>")
             .manuallyHandleLifecycle()
             .create(bootstrap)
+            .then(() => sut.bind())
             .then(() => sut.attached())
             .then(() => expect(sut.element.classList).toContain("btn-large"))
         // act
@@ -140,6 +144,7 @@ describe("the Aurelia Materialize CSS ButtonAttribute", () => {
         sut.inView("<span m:button='disabled:true'></span>")
             .manuallyHandleLifecycle()
             .create(bootstrap)
+            .then(() => sut.bind())
             .then(() => sut.attached())
             .then(() => expect(sut.element.classList).toContain("disabled"))
         // act

@@ -141,6 +141,7 @@ describe("the Aurelia Materialize CSS DropdownAttribute", () => {
         sut
             .manuallyHandleLifecycle()
             .create(bootstrap)
+            .then(() => sut.bind())
             .then(() => sut.attached())
             .then(() => expect(sut.element.classList).toContain("dropdown-button"))
         // act
